@@ -1294,14 +1294,12 @@ blockquote p:after{
 }
 .header_content .menu>li.current-menu-item>a{
     border: 0.5px solid #fff;
-    /* border-radius: 35px; */
     text-align: center;
     font-weight: bold;
     background-color:#e1bd85;
     color:#fff
 }
 .header_content .menu>li:hover>a{
-    /* border-radius: 35px; */
     text-align: center;
     background-color:#e1bd85;
     color:#fff
