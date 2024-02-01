@@ -491,12 +491,14 @@
             $('.owl-single').each(function (index, el) {
                 var $this = $(this);
                 var options = {
-                    autoPlay: false,
+                    autoPlay: true,
+                    loop:true,
                     autoplayHoverPause: true,
                     singleItem: true,
-                    smartSpeed: 1000,
+                    smartSpeed: 500,
                     navigation: true,
-                    navigationText: ['<i class="lotus-icon-left-arrow"></i>', '<i class="lotus-icon-right-arrow"></i>']
+                    navigationText: ['<i class="lotus-icon-left-arrow"></i>', '<i class="lotus-icon-right-arrow"></i>'],
+                    rewind: true,
                 };
                 var single_item = $this.data('single_item');
 
@@ -602,24 +604,29 @@
         if ($('.room-detail_img').length) {
 
             $(".room-detail_img").owlCarousel({
-                navigation: true,
-                pagination: false,
+                navigation: false,
+                pagination: true,
                 navigationText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
                 singleItem: true,
                 mouseDrag: false,
-                transitionStyle: 'fade'
+                transitionStyle: 'fade',
+                autoPlay: true,
+                loop:true,
+                autoplayHoverPause: true,
+                singleItem: true,
+                smartSpeed: 500,
             });
         }
 
         if ($('.room-detail_thumbs').length) {
 
             $(".room-detail_thumbs").owlCarousel({
-                items: 7,
+                items: 8,
                 pagination: false,
                 navigation: false,
                 mouseDrag: false,
                 navigationText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-                itemsCustom: [[0, 3], [320, 4], [480, 5], [768, 6], [992, 7], [1200, 7]]
+                itemsCustom: [[0, 3], [320, 4], [480, 5], [768, 6], [992, 7], [1200, 8]]
             });
 
             if ($(".room-detail_img").data("owlCarousel") !== undefined && $(".room-detail_thumbs").data("owlCarousel") !== undefined) {

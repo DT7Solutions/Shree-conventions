@@ -1058,7 +1058,9 @@ blockquote p:after{
     background-image:url('../images/sc_new/about/about-us-bg.png')
 }
 .bg-10{
-    background-image:url('../images/banner/img-10.jpg')
+    /* background-image:url('../images/banner/img-10.jpg') */
+    background-size: cover;
+    background-image:url('../images/sc_new/about/about-us-bg.png')
 }
 .bg-11{
     background-image:url('../images/banner/img-11.jpg')
@@ -1606,9 +1608,52 @@ blockquote p:after{
 }
 
 .section-slider{
+    margin-top: 5%;
     max-width: 1820px !important;
-    max-height: 780px !important;
+    max-height: 680px;
 }
+.slider-image{
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+.slider-image .img img{
+    position: relative;
+    /* max-height: 680px; */
+    width:100%;
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -ms-transition:all .5s ease;
+    -o-transition:all .5s ease
+}
+.slider-image .text{
+    position:absolute;
+    /* background-color:rgba(0,0,0,0.7); */
+    padding:10px 15px;
+    bottom:50%;
+    left:0;
+    right:0;
+    text-align: center;
+    max-height: 30px;
+}
+.slider-image .text h2{
+    font-size:40px;
+    font-weight:bold;
+    margin:0;
+    font-family:'Hind';
+    color:#fff;
+    -webkit-transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -ms-transition:all .3s ease;
+    -o-transition:all .3s ease
+}
+.slider-image .text h2:hover{
+    color:#e1bd85
+}
+
+
+
+
 #slider-revolution ul{
     padding-left:0;
     list-style:none;
@@ -1617,7 +1662,7 @@ blockquote p:after{
 .banner-slider .slider-item{
     background-repeat:no-repeat;
     background-size:cover;
-    background-position:50% 50%;
+    /* background-position:50% 50%; */
     position:relative
 }
 .banner-slider .slider-item .slider-text{
@@ -4994,7 +5039,8 @@ blockquote p:after{
 }
 .room-detail_img{
     position:relative;
-    margin-top:45px
+    max-height: 720px;
+    /* margin-top:45px */
 }
 .room-detail_img .room_img-item{
     position:relative
@@ -8109,7 +8155,8 @@ blockquote p:after{
 }
 #footer .footer_center .widget-logo .text p a:hover{
     color:#e1bd85;
-    text-decoration:underline
+    text-decoration:none
+    /* text-decoration:underline */
 }
 #footer .footer_center .widget-logo .text p:last-child{
     margin-bottom:0
