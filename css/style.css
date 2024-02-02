@@ -2167,7 +2167,7 @@ blockquote p:after{
 }
 .section-home-about{
     padding-top:70px;
-    padding-bottom:70px
+    /* padding-bottom:70px */
 }
 .home-about .img{
     position:relative
@@ -6207,13 +6207,21 @@ blockquote p:after{
 .about-item{
     overflow:hidden
 }
+
+.about-item.about-right{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .about-item.about-right .img{
     float:right
 }
 .about-item.about-right .text{
     float:right;
     padding-left:0;
-    padding-right:40px
+    padding-right:40px !important;
 }
 .about-item .img{
     float:left;
@@ -6230,7 +6238,7 @@ blockquote p:after{
     width:50%;
     float:left;
     padding-left:40px;
-    margin-top:60px
+    /* margin-top:60px */
 }
 .about-item .text h2{
     line-height:1.2em
@@ -6238,10 +6246,16 @@ blockquote p:after{
 .about-item .text .desc{
     margin-top:20px;
     color:#333333;
-    font-size:13px
+    font-size:13px;
+}
+.about-item .about-right .text .desc{
+    margin-top:20px;
+    color:#333333;
+    font-size:13px;
+    padding-left:40px;
 }
 .about-item .text .desc p{
-    line-height:1.428em
+    line-height:1.428em;
 }
 .about-item:hover .img:before{
     opacity:.9
@@ -8118,7 +8132,7 @@ blockquote p:after{
     /* padding-top:20px */
 }
 #footer .footer_center .widget-logo .img{
-    max-width:175px;
+    /* max-width:175px; */
     display:inline-block;
     vertical-align:middle;
     /* margin-right:40px */
@@ -8133,7 +8147,7 @@ blockquote p:after{
     font-size: 14px;
     color:#acacac;
     margin: 10px;
-    max-width: 320px;
+    /* max-width: 320px; */
 }
 
 #footer .footer_center .widget-logo .text{
@@ -8376,7 +8390,7 @@ blockquote p:after{
         text-align:center
     }
     #footer .footer_center .widget_logo .widget-logo{
-        text-align:left;
+        /* text-align:left; */
         display:inline-block
     }
 }
@@ -8397,8 +8411,8 @@ blockquote p:after{
         margin-top:20px
     }
     .accomd-modations-content .col-xs-4{
-        /* width:50% */
-        max-width: 200px;
+        /* width:50%; */
+        max-width: 50%;
     }
     .accomd-modations{
         padding:50px 0
@@ -8483,7 +8497,12 @@ blockquote p:after{
     }
     .about .about-item .text{
         padding-left:0;
-        margin-top:20px
+        padding-right:0 !important;
+        margin-top:20px;
+    }
+    .about .about-item .about-right .text{
+        padding-left: 40px;
+        margin-top:20px;
     }
     .section-statistics{
         padding:60px 0
