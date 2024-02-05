@@ -1096,6 +1096,11 @@ blockquote p:after{
 .bg-21{
     background-image:url('../images/banner/img-21.jpg')
 }
+
+.View-More-btn{
+    margin-top: 20px;
+}
+
 #header{
     position:fixed;
     z-index:999;
@@ -1441,18 +1446,18 @@ blockquote p:after{
     background-color:#fff
 }
 .menu-bars:hover span{
-    background-color:transparent
+    background-color:#e1bd85
 }
 .menu-bars:hover span:after{
     background-color:#e1bd85;
-    -webkit-transform:rotate(-45deg);
+    /* -webkit-transform:rotate(-45deg); */
     -moz-transform:rotate(-45deg);
     -ms-transform:rotate(-45deg);
     -o-transform:rotate(-45deg)
 }
 .menu-bars:hover span:before{
     background-color:#e1bd85;
-    -webkit-transform:rotate(45deg);
+    /* -webkit-transform:rotate(45deg); */
     -moz-transform:rotate(45deg);
     -ms-transform:rotate(45deg);
     -o-transform:rotate(45deg)
@@ -1464,6 +1469,7 @@ blockquote p:after{
     background-color:transparent
 }
 .menu-bars.active span:after{
+    top: 0;
     background-color:#e1bd85;
     -webkit-transform:rotate(45deg);
     -moz-transform:rotate(45deg);
@@ -1471,6 +1477,7 @@ blockquote p:after{
     -o-transform:rotate(45deg)
 }
 .menu-bars.active span:before{
+    bottom: 0;
     background-color:#e1bd85;
     -webkit-transform:rotate(-45deg);
     -moz-transform:rotate(-45deg);
@@ -1619,6 +1626,7 @@ blockquote p:after{
 }
 .slider-image .img img{
     position: relative;
+    min-height: 460px;
     /* max-height: 680px; */
     width:100%;
     -webkit-transition:all .5s ease;
@@ -1629,15 +1637,17 @@ blockquote p:after{
 .slider-image .text{
     position:absolute;
     /* background-color:rgba(0,0,0,0.7); */
-    padding:10px 15px;
+    /* padding:10px 15px; */
     bottom:50%;
     left:0;
     right:0;
     text-align: center;
-    max-height: 30px;
+    /* height: 100%; */
+    max-height: 75px;
+    -webkit-text-stroke: 2px  #000;
 }
-.slider-image .text h2{
-    font-size:40px;
+.slider-image .text h1{
+    font-size:75px;
     font-weight:bold;
     margin:0;
     font-family:'Hind';
@@ -1647,7 +1657,29 @@ blockquote p:after{
     -ms-transition:all .3s ease;
     -o-transition:all .3s ease
 }
-.slider-image .text h2:hover{
+.slider-image .text h2{
+    font-size:44px;
+    font-weight:bold;
+    margin:0;
+    font-family:'Hind';
+    color:#fff;
+    -webkit-transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -ms-transition:all .3s ease;
+    -o-transition:all .3s ease
+}
+.slider-image .text h4{
+    font-size:32px;
+    font-weight:bold;
+    margin:0;
+    font-family:'Hind';
+    color:#fff;
+    -webkit-transition:all .3s ease;
+    -moz-transition:all .3s ease;
+    -ms-transition:all .3s ease;
+    -o-transition:all .3s ease
+}
+.slider-image .text h1,h2:hover{
     color:#e1bd85
 }
 
@@ -1747,7 +1779,7 @@ blockquote p:after{
 }
 .awe-btn.awe-btn-slider{
     font-size:14px;
-    padding:10px 30px;
+    /* padding:10px 30px; */
     -webkit-transition:none;
     -moz-transition:none;
     -ms-transition:none;
@@ -1895,7 +1927,7 @@ blockquote p:after{
 .accomd-modations-room .text{
     position:absolute;
     background-color:rgba(0,0,0,0.7);
-    padding:10px 15px;
+    /* padding:10px 15px; */
     bottom:5%;
     left:0;
     right:0;
@@ -3915,7 +3947,7 @@ blockquote p:after{
 }
 .section-restaurant-4{
     padding-top:45px;
-    padding-bottom:85px
+    padding-bottom:60px
 }
 .restaurant_title .time{
     color:#898989;
@@ -5035,6 +5067,7 @@ blockquote p:after{
     margin-top:30px
 }
 .section-room-detail{
+    padding-top: 40px;
     padding-bottom:100px
 }
 .room-detail_img{
@@ -6960,11 +6993,8 @@ blockquote p:after{
 }
 .section-contact{
     background-color:#fff;
-    padding-top:45px;
-    padding-bottom:85px
-}
-.contact .text{
-    margin-top:15px
+    padding-top:30px;
+    padding-bottom:60px
 }
 .contact .text h2{
     color:#232323;
@@ -8261,6 +8291,7 @@ blockquote p:after{
     top:1px
 }
 #footer .footer_bottom{
+    display: flex;
     background-color:#101010;
     padding:10px 0;
     text-align:center;
@@ -8270,6 +8301,11 @@ blockquote p:after{
 #footer .footer_bottom p{
     margin-bottom:0;
     font-size:14px
+}
+#footer .footer_bottom p a{
+    margin-bottom:0;
+    font-size:16px;
+    color:#acacac;
 }
 @media screen and (max-width:1199px){
     .check-availability{
@@ -8395,6 +8431,18 @@ blockquote p:after{
     }
 }
 @media screen and (max-width:991px){
+    .slider-image .text{
+        -webkit-text-stroke: 0.5px  #000;
+    }
+    .slider-image .text h1{
+        font-size: 55px;
+    }
+    .slider-image .text h2{
+        font-size: 32px;
+    }
+    .slider-image .text h4{
+        font-size: 26px;
+    }
     .heading{
         font-size:30px
     }
@@ -8692,6 +8740,7 @@ blockquote p:after{
         font-size:30px
     }
     .section-room-detail{
+        padding-top: 25px;
         padding-bottom:70px
     }
     .room-detail_tab-content{
@@ -8723,6 +8772,15 @@ blockquote p:after{
     }
 }
 @media screen and (max-width:767px){
+    .slider-image .text h1{
+        font-size: 46px;
+    }
+    .slider-image .text h2{
+        font-size: 30px;
+    }
+    .slider-image .text h4{
+        font-size: 24px;
+    }
     .banner-slider .slider-caption{
         font-size:50px
     }
@@ -8806,6 +8864,9 @@ blockquote p:after{
     .accomd-modations .accomd-modations-content .accomd-modations-room .text .price .amout{
         font-size:20px
     }
+    .section-our-best .our-best .owl-single .item{
+        margin-left: 20%;
+    }
     .accomd-modations_1 .accomd-modations-room_1 .text .price .amout{
         font-size:26px
     }
@@ -8885,7 +8946,7 @@ blockquote p:after{
     }
     .tabs-restaurant .ui-tabs-nav li{
         border-bottom:2px solid #e7e7e7 !important;
-        display:block;
+        /* display:block; */
         padding-top:15px
     }
     .tabs-restaurant .ui-tabs-nav li a{
@@ -8916,6 +8977,10 @@ blockquote p:after{
     .post .entry-media .count-date span{
         font-size:24px;
         padding:0 5px
+    }
+    #footer .footer_bottom{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 @media (max-width:767px) and (min-width:460px){
@@ -9014,6 +9079,15 @@ blockquote p:after{
     }
 }
 @media screen and (max-width:480px){
+    .slider-image .text h1{
+        font-size: 32px;
+    }
+    .slider-image .text h2{
+        font-size: 24px;
+    }
+    .slider-image .text h4{
+        font-size: 16px;
+    }
     .heading{
         font-size:24px
     }
@@ -9286,8 +9360,8 @@ blockquote p:after{
     .contact .contact-location .btn-collapse,.contact .contact-location .location-group h6,.contact .text h2{
         font-size:16px
     }
-    .contact-map{
-        height:300px
+    .contact-map {
+        height:75%
     }
     .guest-book .guest-book_head .text h2{
         font-size:16px
@@ -9584,6 +9658,10 @@ blockquote p:after{
     }
     #footer .footer_center [class*="col-"]{
         width:100%
+    }
+    #footer .footer_bottom{
+        display: flex;
+        flex-wrap: wrap;
     }
     #footer .footer_bottom p{
         font-size:13px

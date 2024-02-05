@@ -199,11 +199,12 @@
     function toggleMenuIcon() {
         var $menuBars = $('.menu-bars');
         if ($menuBars.hasClass('active')) {
-            $menuBars.html('<span class="close-icon"></span>');
+            $menuBars.html('<span></span>');
         } else {
-            $menuBars.html('<span class="menu-icon"></span>');
+            $menuBars.html('<span></span>');
         }
     }
+
 
 
     /* AwePopup */
@@ -512,7 +513,7 @@
                     loop:true,
                     autoplayHoverPause: true,
                     singleItem: true,
-                    smartSpeed: 500,
+                    smartSpeed: 900,
                     navigation: true,
                     navigationText: ['<i class="lotus-icon-left-arrow"></i>', '<i class="lotus-icon-right-arrow"></i>'],
                     rewind: true,
@@ -1055,7 +1056,7 @@
                 $(".count", this).countTo({
                     from: 0,
                     to: count_element,
-                    speed: 2000,
+                    speed: 5000,
                     refreshInterval: 50,
                 });
             });
