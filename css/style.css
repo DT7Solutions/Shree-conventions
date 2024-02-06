@@ -9733,3 +9733,16 @@ blockquote p:after{
     margin-top:15px
 }
 /*# sourceMappingURL=style.css.map */
+/* .alignments{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  } */
+  .margin-down{
+    margin-bottom: 10px!important;
+  }
+  .margin-section{
+    margin-bottom: 30px!important;
+  }
+  
