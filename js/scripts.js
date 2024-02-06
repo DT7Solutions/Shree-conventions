@@ -157,55 +157,37 @@
 
     /* Menu Click */
     MenuBar();
-
-    var menuBarTimeout;
-
     function MenuBar() {
-        $('.menu-bars').on('click', function (event) {
-            var $headerMenu = $('.header_menu');
 
-            if ($headerMenu.hasClass('active')) {
-                $headerMenu.removeClass('active');
+        $('.menu-bars').on('click', function (event) {
+
+            if ($('.header_menu').hasClass('active')) {
+                $('.header_menu').removeClass('active');
                 $(this).removeClass('active');
             } else {
-                $headerMenu.addClass('active');
+                $('.header_menu').addClass('active');
                 $(this).addClass('active');
-
-                clearTimeout(menuBarTimeout);
-                menuBarTimeout = setTimeout(function() {
-                    $headerMenu.removeClass('active');
-                    $('.menu-bars').removeClass('active');
-                }, 3000); 
             }
 
-            toggleMenuIcon();
         });
 
         $('.menu li a').on('click', 'span', function (event) {
             event.preventDefault();
+
             var $this = $(this),
                 $parent_li = $this.parent('a').parent('li'),
                 $parent_ul = $parent_li.parent('ul');
+
             if ($parent_li.find('> ul').is(':hidden')) {
                 $parent_ul.find('> li > ul').slideUp();
                 $parent_li.find('> ul').slideDown();
             } else {
                 $parent_li.find('> ul').slideUp();
             }
+
             return false;
         });
     }
-
-    function toggleMenuIcon() {
-        var $menuBars = $('.menu-bars');
-        if ($menuBars.hasClass('active')) {
-            $menuBars.html('<span></span>');
-        } else {
-            $menuBars.html('<span></span>');
-        }
-    }
-
-
 
     /* AwePopup */
     AwePopup(CallBackPopup);
@@ -364,7 +346,7 @@
         if ($('#slider-revolution').length) {
             jQuery('#slider-revolution').show().revolution({
                 dottedOverlay: "none",
-                delay: 3500,
+                delay: 7000,
                 startwidth: 1060,
                 startheight: 700,
                 hideThumbs: 200,
@@ -509,14 +491,12 @@
             $('.owl-single').each(function (index, el) {
                 var $this = $(this);
                 var options = {
-                    autoPlay: true,
-                    loop:true,
+                    autoPlay: false,
                     autoplayHoverPause: true,
                     singleItem: true,
-                    smartSpeed: 900,
+                    smartSpeed: 1000,
                     navigation: true,
-                    navigationText: ['<i class="lotus-icon-left-arrow"></i>', '<i class="lotus-icon-right-arrow"></i>'],
-                    rewind: true,
+                    navigationText: ['<i class="lotus-icon-left-arrow"></i>', '<i class="lotus-icon-right-arrow"></i>']
                 };
                 var single_item = $this.data('single_item');
 
@@ -622,29 +602,24 @@
         if ($('.room-detail_img').length) {
 
             $(".room-detail_img").owlCarousel({
-                navigation: false,
-                pagination: true,
+                navigation: true,
+                pagination: false,
                 navigationText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
                 singleItem: true,
                 mouseDrag: false,
-                transitionStyle: 'fade',
-                autoPlay: true,
-                loop:true,
-                autoplayHoverPause: true,
-                singleItem: true,
-                smartSpeed: 500,
+                transitionStyle: 'fade'
             });
         }
 
         if ($('.room-detail_thumbs').length) {
 
             $(".room-detail_thumbs").owlCarousel({
-                items: 8,
+                items: 7,
                 pagination: false,
                 navigation: false,
                 mouseDrag: false,
                 navigationText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-                itemsCustom: [[0, 3], [320, 4], [480, 5], [768, 6], [992, 7], [1200, 8]]
+                itemsCustom: [[0, 3], [320, 4], [480, 5], [768, 6], [992, 7], [1200, 7]]
             });
 
             if ($(".room-detail_img").data("owlCarousel") !== undefined && $(".room-detail_thumbs").data("owlCarousel") !== undefined) {
@@ -1056,7 +1031,7 @@
                 $(".count", this).countTo({
                     from: 0,
                     to: count_element,
-                    speed: 5000,
+                    speed: 2000,
                     refreshInterval: 50,
                 });
             });
