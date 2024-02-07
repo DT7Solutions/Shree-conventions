@@ -1300,17 +1300,43 @@ blockquote p:after{
     /* background-color:#e1bd85; */
     color:#000
 }
-.header_content .menu>li.current-menu-item:before{
+/* .header_content .menu>li.current-menu-item:before{
     position:absolute;
     content:'';
-    height:5px;
+    height:2px;
     width: 100%;
     top: 90%;
     background-color:#e1bd85;
+    transform: scaleX(1);
+    transition: 1s;
+}
+.header_content .menu>li.current-menu-item:hover:before{
+    transform: scaleX(0);
 }
 .header_content .menu>li:hover>a{
     background-color:#e1bd85;
-    color:#fff
+    color:#fff;
+} */
+.header_content .menu>li:before{
+    position:absolute;
+    content:'';
+    height:2px;
+    width: 100%;
+    top: 90%;
+    background-color:#e1bd85;
+    transform: scaleX(0);
+    transition: 1s;
+}
+.header_content .menu>li:hover:before{
+    transform: scaleX(1);
+}
+.header_content .menu>li.current-menu-item>a{
+    background-color:#e1bd85;
+    color:#fff;
+}
+.header_content .menu>li>a.current-menu-item:hover{
+    background-color:#e1bd85;
+    color:#fff;
 }
 .header_content .menu>li:hover>.sub-menu{
     visibility:visible;
@@ -2197,7 +2223,7 @@ blockquote p:after{
     margin-bottom: 30px;
 }
 .section-about .content .featured {
-    padding: 0 195px;
+    padding: 0 18%;
     margin-top: 40px;
     margin-bottom: 30px;
 }
@@ -8087,6 +8113,8 @@ blockquote p:after{
     left: 50px;
     max-width:100%;
     max-height: 100px;
+    border-radius: 25px;
+    /* mix-blend-mode: multiply; */
 }
 #footer .footer_center .widget-logo .logo_text p{
     /* text-align: center; */
@@ -8108,7 +8136,6 @@ blockquote p:after{
 #footer .footer_center .widget-logo .text p i{
     margin-right:10px;
     font-size:16px;
-    color:#fff
 }
 #footer .footer_center .widget-logo .text p a{
     color:#acacac
@@ -8149,6 +8176,9 @@ blockquote p:after{
     -o-transition:all .2s ease
 }
 #footer .footer_center .widget ul li a i{
+    display: inline-flex !important;
+    justify-content: center;
+    width: 30px;
     color: black;
     background-color:#acacac;
     margin:1px 5px;
@@ -8160,6 +8190,9 @@ blockquote p:after{
     -moz-transition:all .2s ease;
     -ms-transition:all .2s ease;
     -o-transition:all .2s ease
+}
+#footer .footer_center .widget ul li a i:hover{
+    color: #000;
 }
 #footer .footer_center .widget ul li a:hover{
     color:#fff
@@ -8755,6 +8788,11 @@ blockquote p:after{
     .accomd-modations_1 .accomd-modations-room_1 .text .price .amout{
         font-size:26px
     }
+    .section-about .content .featured {
+        padding: 0 5%;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
     .section-gallery{
         padding:50px 0
     }
@@ -8842,6 +8880,11 @@ blockquote p:after{
     }
     .tabs-restaurant .ui-tabs-nav li.ui-tabs-active{
         padding-bottom:15px
+    }
+    .restaurant_item.small-thumbs .text .price{
+        position: relative;
+        text-align: start;
+        left: 0;
     }
     .event-restaurant .event-restaurant_header h2{
         font-size:30px
