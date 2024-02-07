@@ -2156,6 +2156,7 @@ blockquote p:after{
     width:250px
 }
 .home-about .text p{
+    text-align: justify;
     color:#232323;
     line-height:1.5em;
     margin-bottom:0;
@@ -2232,6 +2233,7 @@ blockquote p:after{
     font-weight: 500;
 }
 .section-about .details p{
+    text-align: justify;
     font-size: 14px;
     font-weight: 300;
 }
@@ -3795,10 +3797,12 @@ blockquote p:after{
     color:#e1bd85
 }
 .restaurant_item .text .desc{
+    text-align: justify;
+    width:auto;
     color:#444;
     margin-bottom:0;
     font-size:14px;
-    margin-top:5px;
+    margin:10px 0px;
     line-height:1.2em
 }
 .restaurant_item .text .price{
@@ -6213,10 +6217,11 @@ blockquote p:after{
     display:none
 }
 .about-item .text{
+    height: 100%;
     width:50%;
     float:left;
     padding-left:40px;
-    margin-top:60px
+    margin:50px 0px
 }
 .about-item .text h2{
     line-height:1.2em
@@ -6227,7 +6232,9 @@ blockquote p:after{
     font-size:13px
 }
 .about-item .text .desc p{
-    line-height:1.428em
+    text-align: justify;
+    line-height:1.428em;
+    margin: 10px;
 }
 .about-item:hover .img:before{
     opacity:.9
@@ -8481,6 +8488,7 @@ blockquote p:after{
     }
     .about .about-item .text{
         padding-left:0;
+        padding-right: 0;
         margin-top:20px
     }
     .section-statistics{
@@ -9010,12 +9018,15 @@ blockquote p:after{
     .heading{
         font-size:24px
     }
-    #header .header_top .header_left{
+    #header.header-sticky {
+        margin-top: -76px;
+    }
+    /* #header .header_top .header_left{
         display:none
     }
     #header .header_top .header_right{
         border-top-width:0
-    }
+    } */
     #header .header_logo{
         line-height:1
     }
