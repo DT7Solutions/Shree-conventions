@@ -1635,6 +1635,10 @@ blockquote p:after{
 .contact-us .float i{
     margin: 10px 5px 5px 5px;
 }
+.section-slider {
+    max-height: 750px !important;
+    min-height: 420px !important;
+}
 #slider-revolution ul{
     padding-left:0;
     list-style:none;
@@ -8710,6 +8714,10 @@ blockquote p:after{
     }
 }
 @media screen and (max-width:767px){
+    .section-slider {
+        max-height: 560px !important;
+        min-height: 420px !important;
+    }
     .banner-slider .slider-caption{
         font-size:50px
     }
