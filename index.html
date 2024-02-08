@@ -301,19 +301,19 @@
                         <div class="col-lg-3">
                             <h2>CHECK AVAILABILITY</h2>
                         </div>
-                        <div class="col-lg-9">
-                            <form id="ajax-form-search-room" action="search_step_2.php" method="post">
+                        <div class="search-form col-lg-9">
+                            <form id="ajax-form-search-room" action="submit" method="post">
                                 <div class="availability-form">
-                                    <input type="text" name="booking_date" class="awe-calendar from" placeholder="Event Date">
+                                    <input type="text" name="bookingdate" class="awe-calendar from" placeholder="Event Date">
 
-                                    <select class="awe-select" name="event_type">
+                                    <select class="awe-select" name="eventtype" required>
                                         <option>Select Event</option>
                                         <option>Celebrations</option>
                                         <option>Meetings</option>
                                         <option>Weddings</option>
                                         <option>Other Events</option>
                                     </select>
-                                    <select class="awe-select" name="space_hall_type">
+                                    <select class="awe-select" name="spacetype" required>
                                         <option>Select Space</option>
                                         <option>Space Hall 1</option>
                                         <option>Space Hall 2</option>
@@ -324,12 +324,183 @@
                                     </div>
                                 </div>
                             </form>
+
+                            <form id="ajax-form-search-send" action="submit" method="post" style="display: none;">
+
+                                <ul class="list-field-send clearfix">
+                                    <input type="hidden" name="bookingdate" />
+                                    <input type="hidden" name="eventtype" />
+                                    <input type="hidden" name="spacetype" />
+                                    <li>
+                                        <input type="text" name="name" placeholder="Enter Name" />
+                                    </li>
+                                    <li>
+                                        <input type="text" name="phone" placeholder="Enter Phone" />
+                                    </li>
+                                    <li>
+                                        <input type="text" name="email" placeholder="Enter Email" />
+                                    </li>
+                                    <li>
+                                        <button class="awe-btn awe-btn-13" id="bt-send" onclick="sendBooking()">SEND</button>
+                                    </li>
+                                </ul>
+                            </form>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- END / CHECK AVAILABILITY -->
+
+        <!-- SERVICES -->
+        <section class="section-accommo_1 bg-white">
+            <div class="container">
+
+                <div class="accomd-modations_1">
+
+                    <h2 class="heading">OUR SPECIALTY</h2>
+
+                    <div class="accomd-modations-content_1" >
+
+                        <!-- <div class="accomd-modations-service" > -->
+                        <div class="accomd-modations-slide_1" >
+
+                            <!-- ITEM -->
+                            <div class="accomd-modations-room_1">
+                            
+                                <div class="img">
+                                    <a href="#"><img src="images/services/1.png" alt=""></a>
+                                </div>
+                            
+                                <div class="text">
+                                    <h2><a href="#">Weddings</a></h2>
+                                    <p class="desc">Cum sociis natoque penatibus et magnis dis part urient montes, nascetur ridiculus mus. Vestib ulum id ligula porta felis euis.</p>
+                                    <div class="wrap-price">
+                                        <a href="#" class="awe-btn awe-btn-default">VIEW DETAIL</a>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <!-- END / ITEM -->
+                            
+                            <!-- ITEM -->
+                            <div class="accomd-modations-room_1">
+                                <div class="img">
+                                    <a href="#"><img src="images/services/2.png" alt=""></a>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="#">Engagements</a></h2>
+                                    <p class="desc">Cum sociis natoque penatibus et magnis dis part urient montes, nascetur ridiculus mus. Vestib ulum id ligula porta felis euis.</p>
+                                    <div class="wrap-price">
+                                        <a href="#" class="awe-btn awe-btn-default">VIEW DETAIL</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END / ITEM -->
+                            
+                            <!-- ITEM -->
+                            <div class="accomd-modations-room_1">
+                                <div class="img">
+                                    <a href="#"><img src="images/services/3.png" alt=""></a>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="#">Sangeeth</a></h2>
+                                    <p class="desc">Cum sociis natoque penatibus et magnis dis part urient montes, nascetur ridiculus mus. Vestib ulum id ligula porta felis euis.</p>
+                                    <div class="wrap-price">
+                                        <a href="#" class="awe-btn awe-btn-default">VIEW DETAIL</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END / ITEM -->
+
+                            <!-- ITEM -->
+                            <div class="accomd-modations-room_1">
+                                <div class="img">
+                                    <a href="#"><img src="images/services/4.png" alt=""></a>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="#">Celebrations</a></h2>
+                                    <p class="desc">Cum sociis natoque penatibus et magnis dis part urient montes, nascetur ridiculus mus. Vestib ulum id ligula porta felis euis.</p>
+                                    <div class="wrap-price">
+                                        <a href="#" class="awe-btn awe-btn-default">VIEW DETAIL</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END / ITEM -->
+
+                            <!-- ITEM -->
+                            <div class="accomd-modations-room_1">
+                            
+                                <div class="img">
+                                    <a href="#"><img src="images/services/1.png" alt=""></a>
+                                </div>
+                            
+                                <div class="text">
+                                    <h2><a href="#">CONFERENCES</a></h2>
+                                    <p class="desc">Cum sociis natoque penatibus et magnis dis part urient montes, nascetur ridiculus mus. Vestib ulum id ligula porta felis euis.</p>
+                                    <div class="wrap-price">
+                                        <a href="#" class="awe-btn awe-btn-default">VIEW DETAIL</a>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <!-- END / ITEM -->
+                            
+                            <!-- ITEM -->
+                            <div class="accomd-modations-room_1">
+                                <div class="img">
+                                    <a href="#"><img src="images/services/2.png" alt=""></a>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="#">CONCERTS & THEATER</a></h2>
+                                    <p class="desc">Cum sociis natoque penatibus et magnis dis part urient montes, nascetur ridiculus mus. Vestib ulum id ligula porta felis euis.</p>
+                                    <div class="wrap-price">
+                                        <a href="#" class="awe-btn awe-btn-default">VIEW DETAIL</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END / ITEM -->
+                            
+                            <!-- ITEM -->
+                            <div class="accomd-modations-room_1">
+                                <div class="img">
+                                    <a href="#"><img src="images/services/3.png" alt=""></a>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="#">EXHIBITIONS</a></h2>
+                                    <p class="desc">Cum sociis natoque penatibus et magnis dis part urient montes, nascetur ridiculus mus. Vestib ulum id ligula porta felis euis.</p>
+                                    <div class="wrap-price">
+                                        <a href="#" class="awe-btn awe-btn-default">VIEW DETAIL</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END / ITEM -->
+
+                            <!-- ITEM -->
+                            <div class="accomd-modations-room_1">
+                                <div class="img">
+                                    <a href="#"><img src="images/services/4.png" alt=""></a>
+                                </div>
+                                <div class="text">
+                                    <h2><a href="#">BirthDay Parties</a></h2>
+                                    <p class="desc">Cum sociis natoque penatibus et magnis dis part urient montes, nascetur ridiculus mus. Vestib ulum id ligula porta felis euis.</p>
+                                    <div class="wrap-price">
+                                        <a href="#" class="awe-btn awe-btn-default">VIEW DETAIL</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END / ITEM -->
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- SERVICES -->
 
         <!-- ABOUT -->
         <section class="section-home-about bg-white">

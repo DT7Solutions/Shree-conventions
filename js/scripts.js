@@ -1049,6 +1049,34 @@
         });
     }
 
+    $(document).ready(function () {
+        $(window).load(function () {
+            $('#preloader').delay(1000).fadeOut('400', function () {
+                $(this).fadeOut()
+            });
+            $('body').append('<div class="awe-popup-overlay" id="awe-popup-overlay"></div><div class="awe-popup-wrap" id="awe-popup-wrap"><div class="awe-popup-content"></div><span class="awe-popup-close" id="awe-popup-close"></div>');
+            GalleryIsotope();
+            GuestBookMasonry();
+            AttractionMap();
+            ContactMap();
+        });
+
+        $(window).scroll(function (event) {
+            MenuSticky();
+        });
+
+        $(window).resize(function (event) {
+            ParallaxScroll();
+            PopupCenter();
+            MenuResize();
+            MenuSticky();
+            AttractionClick();
+        }).trigger('resize');
+
+    });
+
+
+    /* ----------------------  CONTACT FORM SUBMISSION ----------------- */
     /*Validate message*/
     if ($('#send-contact-form').length) {
         $('#send-contact-form').validate({
@@ -1089,7 +1117,35 @@
                 }
             },
 
+            /*Form Submit Response message*/
             submitHandler: function (form) {
+
+                var formData = $(form).serializeArray();
+                var jsonData = {};
+                formData.forEach(function (field) {
+                    jsonData[field.name] = field.value;
+                });
+                
+                var name = $(form).find('[name="name"]').val();
+                var jsonObject = {};
+                jsonObject[name] = jsonData;
+                
+                // console.log(jsonObject);
+                // console.log(JSON.stringify(jsonObject));
+                console.log(JSON.stringify(jsonObject, null, 2));
+                
+                $(form).replaceWith('<div class="success-message text-center">Thanks for your contact. We will reply soon.</div>');
+            
+                setTimeout(function(){
+                    $('.success-message').fadeOut('slow', function(){
+                        $(this).remove();
+                        $('.contact-form').html(form);
+                    });
+                }, 3000);
+                
+                $(form).trigger('reset');
+
+            /*Using AJAX Form Submit Response message*/
                 $(form).ajaxSubmit({
                     success: function (responseText, statusText, xhr, $form) {
                         $('#contact-content').slideUp(600, function () {
@@ -1104,41 +1160,60 @@
     }
 
     /* ----------------------------- search form ------------------------- */
+
+    $('#ajax-form-search-send').hide();
+
     if ($('#ajax-form-search-room').length) {
         $('#ajax-form-search-room').validate({
             rules: {
-                arrive: {
+                bookingdate: {
                     required: true,
                     minlength: 10
                 },
-                departure: {
+                eventtype: {
                     required: true,
-                    minlength: 10
                 },
-                adults: {
+                spacetype: {
                     required: true,
-                    minlength: 1
                 },
-                children: {
-                    required: false
-                }
             },
             messages: {
-                arrive: {
-                    required: "Please enter a arrive.",
+                bookingdate: {
+                    required: "Please enter a Booking Date.",
                     minlength: $.format("At least {0} characters required.")
                 },
-                departure: {
-                    required: "Please enter a departure.",
-                    minlength: $.format("At least {0} characters required.")
+                eventtype: {
+                    required: "Please Select a Event Type.",
+                    // minlength: $.format("At least {0} characters required.")
                 },
-                adults: {
-                    required: "Please select number of adults.",
-                    minlength: $.format("At least {0} characters required.")
+                spacetype: {
+                    required: "Please select Hall Space.",
+                    // minlength: $.format("At least {0} characters required.")
                 },
+
             },
 
             submitHandler: function (form) {
+                var formData = $(form).serializeArray();
+                var jsonData = {};
+                formData.forEach(function (field) {
+                    jsonData[field.name] = field.value;
+                });
+                
+                var eventtype = $(form).find('[name="eventtype"]').val();
+                var jsonObject = {};
+                jsonObject[eventtype] = jsonData;
+                
+                $('#ajax-form-search-send input[name="bookingdate"]').val(jsonData['bookingdate']);
+                $('#ajax-form-search-send input[name="eventtype"]').val(jsonData['eventtype']);
+                $('#ajax-form-search-send input[name="spacetype"]').val(jsonData['spacetype']);
+
+                $('#ajax-form-search-send').show();
+                $(form).hide();
+                
+                console.log(JSON.stringify(jsonObject, null, 2));
+                
+            /*Using AJAX Form Submit Response message*/
                 $(form).ajaxSubmit({
                     success: function (responseText, statusText, xhr, $form) {
                         $(form).parent().append(responseText);
@@ -1154,37 +1229,20 @@
         });
     }
 
-    $(document).ready(function () {
-        $(window).load(function () {
-            $('#preloader').delay(1000).fadeOut('400', function () {
-                $(this).fadeOut()
-            });
-            $('body').append('<div class="awe-popup-overlay" id="awe-popup-overlay"></div><div class="awe-popup-wrap" id="awe-popup-wrap"><div class="awe-popup-content"></div><span class="awe-popup-close" id="awe-popup-close"></div>');
-            GalleryIsotope();
-            GuestBookMasonry();
-            AttractionMap();
-            ContactMap();
-        });
-
-        $(window).scroll(function (event) {
-            MenuSticky();
-        });
-
-        $(window).resize(function (event) {
-            ParallaxScroll();
-            PopupCenter();
-            MenuResize();
-            MenuSticky();
-            AttractionClick();
-        }).trigger('resize');
-
-    });
-
 })(jQuery);
 
 // function for ajax 
 function sendBooking() {
+
     var $ = jQuery;
+    var roomFormData = $('#ajax-form-search-room').serializeArray();
+    
+    roomFormData.forEach(function(field) {
+        var fieldName = field.name;
+        var fieldValue = field.value;
+        $('#ajax-form-search-send [name="' + fieldName + '"]').val(fieldValue);
+    });
+
     $('#ajax-form-search-send').validate({
         rules: {
             name: {
@@ -1219,6 +1277,33 @@ function sendBooking() {
         },
 
         submitHandler: function (form) {
+            var formData = $(form).serializeArray();
+            var jsonData = {};
+            formData.forEach(function (field) {
+                jsonData[field.name] = field.value;
+            });
+            
+            var name = $(form).find('[name="name"]').val();
+            var jsonObject = {};
+            jsonObject[name] = jsonData;
+            
+            // console.log(jsonObject);
+            // console.log(JSON.stringify(jsonObject));
+            console.log(JSON.stringify(jsonObject, null, 2));
+
+            $(form).replaceWith('<div class="success-message text-center" style="color: white">Thanks for your contact. We will reply soon.</div>');
+            $('.success-message').appendTo('.search-form');
+
+            setTimeout(function(){
+                $('.success-message').fadeOut('slow', function(){
+                    $(this).remove();
+                    // $('#ajax-form-search-room').trigger('reset').show();
+                    $('#ajax-form-search-room')[0].reset();
+                    $('#ajax-form-search-room').show(); 
+                });
+            }, 5000);
+            
+        /*Using AJAX Form Submit Response message*/
             $(form).ajaxSubmit({
                 success: function (responseText, statusText, xhr, $form) {
                     $(form).parent().append(responseText);
