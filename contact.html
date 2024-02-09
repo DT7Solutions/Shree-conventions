@@ -27,6 +27,30 @@
     <!-- MAIN STYLE -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("ZyO1qs66SY_EtdXHF");
+        })();
+    </script>
+
+    <!-- <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var form = this;
+            var userName = form.elements['name'].value; 
+            emailjs.sendForm('service_tnxor7l', 'template_aidf1vd', form)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    form.reset();
+                    alert('Thank you, ' + userName + '! Your message has been sent successfully.');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    </script> -->
+    
+
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>

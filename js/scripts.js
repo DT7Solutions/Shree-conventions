@@ -1145,6 +1145,16 @@
                 
                 $(form).trigger('reset');
 
+                // Using Email.js for mail sending
+                emailjs.send("service_tnxor7l", "template_aidf1vd", jsonObject)
+                .then(function(response) {
+                    console.log("Email sent successfully:", response);
+                    alert("Thank you, " + name + "! Your message has been sent successfully.");
+                }, function(error) {
+                    console.error("Email sending failed:", error);
+                    alert("Sorry, " + name + ". There was an error while sending your message. Please try again later.");
+                });
+
             /*Using AJAX Form Submit Response message*/
                 $(form).ajaxSubmit({
                     success: function (responseText, statusText, xhr, $form) {
