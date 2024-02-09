@@ -1390,13 +1390,35 @@ blockquote p:after{
     position:relative;
     top:2px
 }
-.header_content .menu>li .sub-menu li.current-menu-item>a{
+/* .header_content .menu>li .sub-menu li.current-menu-item>a{
     background-color:#e1bd85;
     color:#fff
 }
 .header_content .menu>li .sub-menu li:hover>a{
     background-color:#e1bd85;
     color:#fff
+} */
+.header_content .menu>li .sub-menu>li:before{
+    position:absolute;
+    content:'';
+    height:2px;
+    width: 100%;
+    top: 90%;
+    background-color:#e1bd85;
+    transform: scaleX(0);
+    transition: 1s;
+}
+.header_content .menu>li .sub-menu>li:hover:before{
+    transform: scaleX(1);
+}
+
+.header_content .menu>li.current-menu-item .sub-menu>li.current-menu-item >a{
+    background-color:#e1bd85;
+    color:#fff;
+}
+.header_content .menu>li>a.current-menu-item:hover{
+    background-color:#e1bd85;
+    color:#fff;
 }
 .header_content .menu>li .sub-menu li:hover>.sub-menu{
     visibility:visible;
@@ -3982,7 +4004,7 @@ blockquote p:after{
     left:0;
     width:0;
     bottom:-2px;
-    border-top:2px solid #e1bd85;
+    border-top:5px solid #e1bd85;
     -webkit-transition:all .3s ease;
     -moz-transition:all .3s ease;
     -ms-transition:all .3s ease;

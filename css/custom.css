@@ -238,7 +238,7 @@
   .item.room-item .awe-btn {
     margin: 25px 0 20px 0; }
 
-.item.room-item-style-2 .outer {
+.ot-accomd-modations-content .item.room-item-style-2 .outer {
   position: relative; }
   .item.room-item-style-2 .outer .bgr {
     position: absolute;
@@ -281,7 +281,7 @@
     .item.room-item-style-2:hover .bgr .details .info {
       display: block; }
 
-.ot-accomd-modations .content {
+.section-service .ot-accomd-modations .content {
   border-top: 1px solid #dadada; }
   .ot-accomd-modations .content .ot-accomd-modations-content .owl-buttons {
     display: none; }
