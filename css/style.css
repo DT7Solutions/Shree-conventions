@@ -1887,7 +1887,7 @@ blockquote p:after{
 }
 .accomd-modations-header p{
     margin:10px auto 20px;
-    max-width:635px
+    max-width:991px
 }
 .accomd-modations-room{
     position:relative;
@@ -2195,9 +2195,10 @@ blockquote p:after{
     text-align: justify;
     color:#232323;
     line-height:1.5em;
-    margin-bottom:0;
-    margin-top:25px;
-    font-size:14px
+    margin-bottom:10px;
+    margin-top:10px;
+    font-size:14px;
+    text-indent: 3em;
 }
 .home-about .text .awe-btn{
     margin-top:25px
@@ -2217,10 +2218,13 @@ blockquote p:after{
     position:relative
 }
 .our-best .text p{
-    color:#333;
-    margin-bottom:0;
-    margin-top:25px;
-    line-height:1.428em
+    text-align: justify;
+    color:#232323;
+    line-height:1.5em;
+    margin-bottom:10px;
+    margin-top:10px;
+    font-size:14px;
+    text-indent: 3em;
 }
 .our-best .text ul{
     list-style:none;
@@ -2307,7 +2311,7 @@ blockquote p:after{
 }
 
 .home-guestbook{
-    padding:50px 0;
+    padding:20px 0;
     position:relative
 }
 .home-guestbook:after{
@@ -2344,7 +2348,7 @@ blockquote p:after{
     overflow:hidden;
     width:115px;
     height:115px;
-    margin:30px auto;
+    margin:20px auto;
     -webkit-border-radius:100%;
     -moz-border-radius:100%;
     border-radius:100%
@@ -2375,6 +2379,15 @@ blockquote p:after{
     font-size:40px;
     line-height:0;
     margin-left:10px
+}
+.guestbook-item .text .rating{
+    color: gold;
+    display:inline-block;
+    width:100%;
+    filter: drop-shadow(2px 10px 5px black);
+}
+.guestbook-item .text .rating strong{
+    font-size:40px
 }
 .guestbook-item .text span{
     color:#ffffff;
