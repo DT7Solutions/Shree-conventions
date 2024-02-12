@@ -1134,19 +1134,20 @@
                 // console.log(JSON.stringify(jsonObject));
                 console.log(JSON.stringify(jsonObject, null, 2));
                 
-                $(form).replaceWith('<div class="success-message text-center">Thanks for your contact. We will reply soon.</div>');
+                // $(form).replaceWith('<div class="success-message text-center">Thanks for your contact. We will reply soon.</div>');
             
-                setTimeout(function(){
-                    $('.success-message').fadeOut('slow', function(){
-                        $(this).remove();
-                        $('.contact-form').html(form);
-                    });
-                }, 3000);
+                // setTimeout(function(){
+                //     $('.success-message').fadeOut('slow', function(){
+                //         $(this).remove();
+                //         $('.contact-form').html(form);
+                //     });
+                // }, 3000);
                 
                 $(form).trigger('reset');
 
                 // Using Email.js for mail sending
-                emailjs.send("service_tnxor7l", "template_aidf1vd", jsonObject)
+                // emailjs.send("Service_ID", "Template_ID", formData)
+                emailjs.send("service_tnxor7l", "template_aidf1vd", jsonData)
                 .then(function(response) {
                     console.log("Email sent successfully:", response);
                     alert("Thank you, " + name + "! Your message has been sent successfully.");
@@ -1301,17 +1302,32 @@ function sendBooking() {
             // console.log(JSON.stringify(jsonObject));
             console.log(JSON.stringify(jsonObject, null, 2));
 
-            $(form).replaceWith('<div class="success-message text-center" style="color: white">Thanks for your contact. We will reply soon.</div>');
-            $('.success-message').appendTo('.search-form');
+            // $(form).replaceWith('<div class="success-message text-center" style="color: white">Thanks for your contact. We will reply soon.</div>');
+            // $('.success-message').appendTo('.search-form');
 
-            setTimeout(function(){
-                $('.success-message').fadeOut('slow', function(){
-                    $(this).remove();
-                    // $('#ajax-form-search-room').trigger('reset').show();
-                    $('#ajax-form-search-room')[0].reset();
-                    $('#ajax-form-search-room').show(); 
-                });
-            }, 5000);
+            // setTimeout(function(){
+            //     $('.success-message').fadeOut('slow', function(){
+            //         $(this).remove();
+            //         $('#ajax-form-search-room')[0].reset();
+            //         $('#ajax-form-search-room').show(); 
+            //     });
+            // }, 5000);
+
+            $('#ajax-form-search-send').hide();
+            $('#ajax-form-search-room').show();
+            $('#ajax-form-search-room')[0].reset();
+            // $(form).trigger('reset');
+
+            // Using Email.js for mail sending
+            // emailjs.send("Service_ID", "Template_ID", formData)
+            // emailjs.send("service_tnxor7l", "template_cf9wiop", jsonData)
+            // .then(function(response) {
+            //     console.log("Email sent successfully:", response);
+            //     alert("Thank you, " + name + "! Your message has been sent successfully.");
+            // }, function(error) {
+            //     console.error("Email sending failed:", error);
+            //     alert("Sorry, " + name + ". There was an error while sending your message. Please try again later.");
+            // });
             
         /*Using AJAX Form Submit Response message*/
             $(form).ajaxSubmit({
