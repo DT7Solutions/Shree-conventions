@@ -238,15 +238,18 @@
   .item.room-item .awe-btn {
     margin: 25px 0 20px 0; }
 
-.ot-accomd-modations-content .item.room-item-style-2 .outer {
-  position: relative; }
+  .ot-accomd-modations-content .item.room-item-style-2 .outer {
+    position: relative;
+    height: 550px;
+  }
   .item.room-item-style-2 .outer .bgr {
     position: absolute;
     top: 75%;
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background: linear-gradient(to top, black 25%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0)) 75%, transparent;
+    /* background-color: rgba(0, 0, 0, 0.9); */
     color: #fff;
     -webkit-transition: all .4s ease-out;
     -o-transition: all .4s ease-out;
