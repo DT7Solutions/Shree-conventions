@@ -491,11 +491,10 @@
             $('.owl-single').each(function (index, el) {
                 var $this = $(this);
                 var options = {
-                    // autoPlay: false,
-                    autoPlay: true,
+                    autoPlay: false,
                     autoplayHoverPause: true,
                     singleItem: true,
-                    smartSpeed: 2000,
+                    smartSpeed: 1000,
                     navigation: true,
                     navigationText: ['<i class="lotus-icon-left-arrow"></i>', '<i class="lotus-icon-right-arrow"></i>']
                 };
