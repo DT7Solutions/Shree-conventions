@@ -240,7 +240,7 @@
 
   .ot-accomd-modations-content .item.room-item-style-2 .outer {
     position: relative;
-    height: 550px;
+    /* height: 550px; */
   }
   .item.room-item-style-2 .outer .bgr {
     position: absolute;
@@ -306,6 +306,7 @@
     margin: 0 auto; }
 
 .section-our-best.our-best-style-2 .owl-controls .owl-pagination {
+  display: none;
   text-align: center; }
   .section-our-best.our-best-style-2 .owl-controls .owl-pagination .owl-page {
     border-color: #232323; }
@@ -314,6 +315,39 @@
 
 .section-our-best.our-best-style-2 .owl-buttons {
   display: none; }
+
+.section-our-best.our-best-style-2 .owl-carousel .owl-wrapper{
+  display: flex !important;
+  width: 100% !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  transform: translate3d(0,0,0) !important;
+}
+.section-our-best.our-best-style-2 .owl-carousel .owl-wrapper .owl-item{
+  padding-right: 20px;
+  margin: 20px 0px;
+  width: 50% !important;
+}
+.section-our-best.our-best-style-2 .owl-carousel .owl-wrapper .owl-item .row{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.section-our-best.our-best-style-2 .owl-carousel .owl-wrapper .owl-item .row .item{
+  max-width: 100px;
+  max-height: 100px;
+}
+.section-our-best.our-best-style-2 .owl-carousel .owl-wrapper .owl-item .row .item img{
+  max-width: 50px;
+  max-height: 50px;
+}
+.section-our-best.our-best-style-2 .owl-carousel .owl-wrapper .owl-item .row .item span{
+  font-size: 10px; 
+}
 
 /* ===============================  HOME ABOUT ================================ */
 .section-home-about.style-2 .home-about .img-hover-box {

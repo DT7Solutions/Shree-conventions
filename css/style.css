@@ -1087,7 +1087,11 @@ blockquote p:after{
     background-image:url('../images/banner/background-bg.png')
 }
 .bg-14{
-    background-image:url('../images/banner/img-14.jpg')
+    /* background-image:url('../images/banner/img-14.jpg') */
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0.001)) 75%, transparent url(../images/banner/background-bg.png);
+    /* background-image:url('../images/banner/background-bg.png') */
 }
 .bg-15{
     background-image:url('../images/banner/img-15.jpg')
@@ -1928,7 +1932,7 @@ blockquote p:after{
     position:absolute;
     background: linear-gradient(to top, black 25%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0)) 75%, transparent;
     /* background-color:rgba(0,0,0,0.7); */
-    padding:10px 20px;
+    padding:50px 20px 10px 20px;
     bottom:0px;
     left:0;
     right:0;
@@ -2295,8 +2299,9 @@ blockquote p:after{
     margin-bottom: 30px;
 }
 .section-about .content .featured p{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
+    color:#E1BD85;
 }
 .section-about .details p{
     text-align: justify;
@@ -4888,7 +4893,9 @@ blockquote p:after{
     font-family:'Montserrat'
 }
 .room_item-5 .room_item-forward h2 a{
-    color:#fff
+    /* color:#fff */
+    text-align: center;
+    color: #e1bd85;
 }
 .room_item-5 .room_item-forward .price{
     display:block;
@@ -4902,7 +4909,8 @@ blockquote p:after{
     padding:30px 50px;
     min-height:325px;
     border:2px solid #393736;
-    background-color:rgba(255,255,255,0.95);
+    /* background-color:rgba(255,255,255,0.95); */
+    background: linear-gradient(to top, black 15%, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.01)) 65%, transparent;
     visibility:hidden;
     opacity:0;
     -webkit-transform:scale(.9);
@@ -4915,7 +4923,8 @@ blockquote p:after{
     -o-transition:all .2s ease
 }
 .room_item-5 .room_item-back h3{
-    color:#333;
+    color: #e1bd85;
+    /* color:#333; */
     font-size:30px;
     text-transform:uppercase;
     font-family:'Montserrat';
@@ -4931,13 +4940,16 @@ blockquote p:after{
     display:block
 }
 .room_item-5 .room_item-back p{
-    color:#898989;
+    /* color:#898989; */
+    color :#fff;
     font-size:15px;
     margin-bottom:0;
     margin-top:30px
 }
 .room_item-5 .room_item-back p b{
-    color:#333
+    /* color:#333 */
+    color: #ffffff;
+    font-size: 18px;
 }
 .room_item-5 .room_item-back .awe-btn{
     font-weight:bold;
@@ -5097,6 +5109,7 @@ blockquote p:after{
     margin-top:-30px
 }
 .room-wrap-5 .room_item-5{
+    text-align: center;
     margin-top:30px
 }
 .room-wrap-6{
@@ -6265,14 +6278,46 @@ blockquote p:after{
 }
 .section-about{
     background-color:#fff;
-    padding-bottom:75px;
+    padding-bottom:30px;
     padding-top:40px
 }
 .section-about .about{
-    margin-top:40px
+    margin-top:40px;
+    margin-bottom: 30px;
 }
 .section-about .about .about-item{
-    margin-top:40px
+    margin-top:40px;
+    margin-bottom: 30px;
+}
+
+.section-about-founder{
+    background-color: #FBF6EF;
+    padding-bottom:30px;
+    padding-top:40px
+}
+.section-about-founder .about{
+    margin-top:40px;
+    margin-bottom: 30px;
+}
+.section-about-founder .about .about-item{
+    margin-top:40px;
+    margin-bottom: 30px;
+}
+.section-about-founder .about .about-item .text .desc p{
+    text-align: center;
+}
+.section-about-why-choose {
+    background-color:#fff;
+    padding-bottom:30px;
+    padding-top:40px
+}
+.section-about-why-choose .about{
+    margin-top:40px;
+    margin-bottom: 30px;
+}
+.section-about-why-choose .about .about-item{
+    margin-top:40px;
+    margin-bottom: 30px;
 }
 
 .about-item{
@@ -6348,7 +6393,8 @@ blockquote p:after{
 .statistics_item .count{
     font-size:60px;
     font-family:'Montserrat';
-    color:#fff;
+    color:#e1bd85;
+    font-weight: 800;
     display:block;
     line-height:1.3em
 }
@@ -7024,7 +7070,8 @@ blockquote p:after{
     padding-bottom:85px
 }
 .contact .text{
-    margin-top:15px
+    margin-top:15px;
+    max-width: 800px;
 }
 .contact .text h2{
     color:#232323;
@@ -7181,6 +7228,40 @@ blockquote p:after{
     height:100%;
     width:100%
 }
+
+.contactdetails {
+    margin-top: 20px;
+}
+.contactdetails .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contactdetails .col-md-6, .contactdetails .col-lg-6 {
+    width: 50%;
+    padding: 10px;
+}
+.contactdetails .col-md-12, .contactdetails .col-lg-12 {
+    width: 100%;
+    padding: 10px;
+}
+.contactdetails i {
+    font-size: 36px;
+    color: #e1bd85;
+    margin-bottom: 10px;
+}
+.contactdetails h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.contactdetails a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+
 .section-shortcode{
     padding-top:50px;
     padding-bottom:70px;
