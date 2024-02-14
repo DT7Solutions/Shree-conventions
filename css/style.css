@@ -4909,8 +4909,8 @@ blockquote p:after{
     padding:30px 50px;
     min-height:325px;
     border:2px solid #393736;
-    /* background-color:rgba(255,255,255,0.95); */
-    background: linear-gradient(to top, black 15%, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.01)) 65%, transparent;
+    background-color:rgba(255,255,255,0.95);
+    /* background: linear-gradient(to top, black 15%, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.01)) 65%, transparent; */
     visibility:hidden;
     opacity:0;
     -webkit-transform:scale(.9);
@@ -4940,15 +4940,15 @@ blockquote p:after{
     display:block
 }
 .room_item-5 .room_item-back p{
-    /* color:#898989; */
-    color :#fff;
+    color:#898989;
+    /* color :#fff; */
     font-size:15px;
     margin-bottom:0;
     margin-top:30px
 }
 .room_item-5 .room_item-back p b{
-    /* color:#333 */
-    color: #ffffff;
+    color:#333
+    /* color: #ffffff; */
     font-size: 18px;
 }
 .room_item-5 .room_item-back .awe-btn{
@@ -6278,8 +6278,8 @@ blockquote p:after{
 }
 .section-about{
     background-color:#fff;
-    padding-bottom:30px;
-    padding-top:40px
+    /* padding-bottom:30px; */
+    /* padding-top:40px */
 }
 .section-about .about{
     margin-top:40px;
@@ -6292,8 +6292,8 @@ blockquote p:after{
 
 .section-about-founder{
     background-color: #FBF6EF;
-    padding-bottom:30px;
-    padding-top:40px
+    /* padding-bottom:30px; */
+    /* padding-top:40px */
 }
 .section-about-founder .about{
     margin-top:40px;
@@ -6308,8 +6308,8 @@ blockquote p:after{
 }
 .section-about-why-choose {
     background-color:#fff;
-    padding-bottom:30px;
-    padding-top:40px
+    /* padding-bottom:30px; */
+    /* padding-top:40px */
 }
 .section-about-why-choose .about{
     margin-top:40px;
@@ -7071,7 +7071,7 @@ blockquote p:after{
 }
 .contact .text{
     margin-top:15px;
-    max-width: 800px;
+    /* max-width: 800px; */
 }
 .contact .text h2{
     color:#232323;
@@ -7235,11 +7235,12 @@ blockquote p:after{
 .contactdetails .row {
     display: flex;
     flex-wrap: wrap;
-}
-.contactdetails .col-md-6, .contactdetails .col-lg-6 {
-    width: 50%;
     padding: 10px;
 }
+/* .contactdetails .col-md-6, .contactdetails .col-lg-6 {
+    width: 50%;
+    padding: 10px;
+} */
 .contactdetails .col-md-12, .contactdetails .col-lg-12 {
     width: 100%;
     padding: 10px;
@@ -7260,7 +7261,23 @@ blockquote p:after{
     display: inline-block;
     margin-bottom: 10px;
 }
-
+.contactdetails .awe-btn.awe-btn-13{
+    border:2px solid #e1bd85;
+    color:#e1bd85 !important;
+    background-color:#fff !important
+}
+.contactdetails .awe-btn.awe-btn-13:hover{
+    border-color:#e1bd85;
+    background-color:#fff;
+    color:#e1bd85 !important
+}
+.contactdetails .awe-btn.awe-btn-13.btn-order{
+    height:54px;
+    line-height:50px;
+    padding-top:0 !important;
+    font-size:16px !important;
+    padding-bottom:0 !important
+}
 
 .section-shortcode{
     padding-top:50px;
@@ -9457,7 +9474,7 @@ blockquote p:after{
         font-size:16px
     }
     .contact-map{
-        height:300px
+        /* height:300px */
     }
     .guest-book .guest-book_head .text h2{
         font-size:16px
