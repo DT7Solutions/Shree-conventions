@@ -491,8 +491,8 @@
             $('.owl-single').each(function (index, el) {
                 var $this = $(this);
                 var options = {
-                    autoPlay: false,
                     autoplayHoverPause: true,
+                    autoPlay: false,
                     singleItem: true,
                     smartSpeed: 1000,
                     navigation: true,
