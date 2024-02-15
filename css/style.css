@@ -914,9 +914,10 @@ blockquote p:after{
 .owl-controls .owl-pagination .owl-page{
     font-size:14px;
     display:inline-block;
-    width:150px;
+    /* width:150px; */
+    width:25%;
     height:5px;
-    border:1px solid #333;
+    border:0.5px solid #333;
     margin:0 2px;
     -webkit-border-radius:100%;
     -moz-border-radius:100%;
@@ -1864,6 +1865,7 @@ blockquote p:after{
     position:relative
 }
 .sub-banner .text{
+    padding-top:50px;
     padding-bottom:50px
 }
 .sub-banner .text h2{
@@ -7230,12 +7232,12 @@ blockquote p:after{
 }
 
 .contactdetails {
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .contactdetails .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    padding: 5px;
 }
 /* .contactdetails .col-md-6, .contactdetails .col-lg-6 {
     width: 50%;
@@ -7243,7 +7245,7 @@ blockquote p:after{
 } */
 .contactdetails .col-md-12, .contactdetails .col-lg-12 {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
 }
 .contactdetails i {
     font-size: 36px;
@@ -9196,6 +9198,10 @@ blockquote p:after{
     .room-detail_rates table{
         width:767px
     }
+    .gallery-cat ul li a{
+        font-size:12px;
+        padding:10px
+    }
 }
 @media screen and (max-width:480px){
     .heading{
@@ -9329,6 +9335,10 @@ blockquote p:after{
     }
     .gallery-content .gallery_item .text{
         font-size:13px
+    }
+    .gallery-cat ul li a{
+        font-size:10px;
+        padding:5px
     }
     .team .sub-heading{
         font-size:15px
@@ -9911,6 +9921,10 @@ blockquote p:after{
     .reservation-chosen-message h4{
         font-size:18px
     }
+    .gallery-cat ul li a{
+        font-size:8px;
+        padding:5px
+    }
 }
 .list-field-send{
     margin:8px 0 0
@@ -9982,4 +9996,4 @@ blockquote p:after{
   .margin-section{
     margin-bottom: 30px!important;
   }
-  
+
