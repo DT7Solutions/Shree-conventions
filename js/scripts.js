@@ -604,6 +604,7 @@
             $(".room-detail_img").owlCarousel({
                 navigation: true,
                 pagination: false,
+                autoPlay: true,
                 navigationText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
                 singleItem: true,
                 mouseDrag: false,
@@ -614,12 +615,13 @@
         if ($('.room-detail_thumbs').length) {
 
             $(".room-detail_thumbs").owlCarousel({
-                items: 7,
+                items: 8,
+                autoPlay: true,
                 pagination: false,
                 navigation: false,
                 mouseDrag: false,
                 navigationText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-                itemsCustom: [[0, 3], [320, 4], [480, 5], [768, 6], [992, 7], [1200, 7]]
+                itemsCustom: [[0, 3], [320, 4], [480, 5], [768, 6], [992, 8], [1200, 8]]
             });
 
             if ($(".room-detail_img").data("owlCarousel") !== undefined && $(".room-detail_thumbs").data("owlCarousel") !== undefined) {

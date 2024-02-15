@@ -4286,7 +4286,7 @@ blockquote p:after{
     color:#e1bd85
 }
 .section-room{
-    padding-top:45px;
+    /* padding-top:45px; */
     padding-bottom:100px
 }
 .room_item-1{
@@ -5125,7 +5125,7 @@ blockquote p:after{
 }
 .room-detail_img{
     position:relative;
-    margin-top:45px
+    /* margin-top:45px */
 }
 .room-detail_img .room_img-item{
     position:relative
@@ -5305,6 +5305,13 @@ blockquote p:after{
     padding-top:20px;
     border-top:1px solid #e4e4e4
 }
+.room-detail_tab .room-menu{
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+}
+.room-detail_tab .room-menu ul li{
+    padding: 10px 0px;
+}
 .room-detail_tab-header{
     list-style:none;
     padding-left:0;
@@ -5348,7 +5355,7 @@ blockquote p:after{
     width:100%
 }
 .room-detail_tab-content{
-    padding-top:20px;
+    /* padding-top:20px; */
     position:relative
 }
 .room-detail_tab-content:before{
@@ -8861,6 +8868,15 @@ blockquote p:after{
     }
     .section-room-detail{
         padding-bottom:70px
+    }
+    .services-slider .room-detail_tab-content{
+        padding-top:0px
+    }
+    .room-detail_tab .room-menu{
+        padding: 10px 20px;
+    }
+    .room-detail_tab .room-menu ul li{
+        padding: 10px 0px;
     }
     .room-detail_tab-content{
         padding-top:50px
