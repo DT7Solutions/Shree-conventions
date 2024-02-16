@@ -4760,7 +4760,7 @@ blockquote p:after{
     position:relative
 }
 .room_item-4 .thumbs img{
-    width:100%
+    width:100%;
 }
 .room_item-4 .thumbs:before,.room_item-4 .thumbs:after{
     content:'';
@@ -4807,11 +4807,12 @@ blockquote p:after{
 .room_item-4 .text-thumbs .text{
     padding-left:70px;
     padding-right:70px;
-    margin-top:45px
+    /* margin-top:45px */
 }
 .room_item-4 .text-thumbs .thumbs{
     margin-left:-30px;
-    margin-top:80px
+    /* margin-top:80px */
+    margin-top:55px
 }
 .room_item-4.img-right .img{
     left:58.33333333%
@@ -6360,10 +6361,11 @@ blockquote p:after{
     width:50%;
     float:left;
     padding-left:40px;
-    margin:50px 0px
+    margin:30px 0px 20px 0px
 }
 .about-item .text h2{
-    line-height:1.2em
+    line-height:1.2em;
+    padding-top: 5px;
 }
 .about-item .text .desc{
     margin-top:20px;
@@ -8272,8 +8274,10 @@ blockquote p:after{
 #footer .footer_top .social .social-content a{
     font-size:14px;
     display:inline-block;
-    color:#fff;
-    border:2px solid #fff;
+    /* color:#fff;
+    border:2px solid #fff; */
+    color:#e1bd85;
+    border:2px solid #e1bd85;
     line-height:32px;
     width:32px;
     height:32px;
@@ -8290,7 +8294,10 @@ blockquote p:after{
     -o-transition:all .3s ease
 }
 #footer .footer_top .social .social-content a:hover{
-    border-color:#e1bd85
+    /* border-color:#e1bd85 */
+    color: #000;
+    background-color: #e1bd85;
+    border: 2px solid #fff;
 }
 #footer .footer_center{
     padding-bottom:40px
@@ -8378,11 +8385,14 @@ blockquote p:after{
     display: inline-flex !important;
     justify-content: center;
     width: 30px;
-    color: black;
-    background-color:#acacac;
+    color: #e1bd85;
+    /* color: black; */
+    /* background-color: #e1bd85; */
+    /* background-color:#acacac; */
     margin:1px 5px;
     padding:5px 5px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border: 2px solid #e1bd85;
     border-radius: 25%;
     display:inline-block;
     -webkit-transition:all .2s ease;
@@ -8392,9 +8402,12 @@ blockquote p:after{
 }
 #footer .footer_center .widget ul li a i:hover{
     color: #000;
+    background-color: #e1bd85;
+    border: 2px solid #fff;
 }
 #footer .footer_center .widget ul li a:hover{
-    color:#fff
+    /* color:#fff */
+    color: #E1BD85;
 }
 #footer .footer_center .widget ul li .sub-menu{
     margin-left:15px
