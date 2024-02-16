@@ -4286,6 +4286,10 @@ blockquote p:after{
     color:#e1bd85
 }
 .section-room{
+    padding-top:45px;
+    padding-bottom:100px
+}
+.section-room-services-section{
     /* padding-top:45px; */
     padding-bottom:100px
 }
