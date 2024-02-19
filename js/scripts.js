@@ -1345,3 +1345,132 @@ function sendBooking() {
     $('#ajax-form-search-send').submit();
     return false;
 }
+
+
+/* ---------------------- EVENT BOOKING FORM --------------------------*/
+$(document).ready(function() {
+    if ($('#bookingForm').length) {
+        $('#bookingForm').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: {
+                    required: true,
+                    minlength: 10
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                subject: {
+                    required: true,
+                    minlength: 2
+                },
+                event: {
+                    required: true,
+                },
+                date: {
+                    required: true,
+                    minlength: 10
+                },
+                session: {
+                    required: true,
+                },
+                message: {
+                    required: true,
+                    minlength: 10
+                }
+            },
+            messages: {
+                name: {
+                    required: "Please enter your name.",
+                    minlength: $.format("At least {0} characters required.")
+                },
+                phone: {
+                    required: "Please enter your phone number.",
+                    minlength: $.format("At least {0} digits required.")
+                },
+                email: {
+                    required: "Please enter your email address.",
+                    email: "Please enter a valid email address."
+                },
+                subject: {
+                    required: "Please enter a subject.",
+                    minlength: $.format("At least {0} characters required.")
+                },
+                event: {
+                    required: "Please select an event."
+                },
+                date: {
+                    required: "Please select a date.",
+                    minlength: "Please select a valid date."
+                },
+                session: {
+                    required: "Please select a session."
+                },
+                message: {
+                    required: "Please enter a message.",
+                    minlength: $.format("At least {0} characters required.")
+                }
+            },
+
+            
+            submitHandler: function (form) {
+                var formData = $(form).serializeArray();
+                var jsonData = {};
+
+                var foodValue = $(form).find('[name="food"]').is(':checked') ? 'Yes' : 'No';
+                var djValue = $(form).find('[name="dj"]').is(':checked') ? 'Yes' : 'No';
+                var decorationsValue = $(form).find('[name="decorations"]').is(':checked') ? 'Yes' : 'No';
+                var photographyValue = $(form).find('[name="photography"]').is(':checked') ? 'Yes' : 'No';
+                
+                formData.push({name: 'food', value: foodValue});
+                formData.push({name: 'dj', value: djValue});
+                formData.push({name: 'decorations', value: decorationsValue});
+                formData.push({name: 'photography', value: photographyValue});
+
+                formData.forEach(function (field) {
+                    jsonData[field.name] = field.value;
+                });
+                
+                var name = $(form).find('[name="name"]').val();
+                var jsonObject = {};
+                jsonObject[name] = jsonData;
+                
+                console.log(JSON.stringify(jsonObject, null, 2));
+                $(form).trigger('reset');
+                
+
+                // Using Email.js for mail sending
+                emailjs.send("Service_ID", "Template_ID", formData)
+                emailjs.send("service_tnxor7l", "template_cf9wiop", jsonData)
+                .then(function(response) {
+                    console.log("Email sent successfully:", response);
+                    alert("Thank you, " + name + "! Your message has been sent successfully.");
+                }, function(error) {
+                    console.error("Email sending failed:", error);
+                    alert("Sorry, " + name + ". There was an error while sending your message. Please try again later.");
+                });
+
+                /*Using AJAX Form Submit Response message*/
+                $(form).ajaxSubmit({
+                    // type: 'POST',
+                    // url: 'URL',
+                    // data: formData,
+                    success: function (responseText, statusText, xhr, $form) {
+                        alert('Form submitted successfully!');
+                        $('#bookingForm')[0].reset();
+                    },
+                    error: function(xhr, status, error) {
+                        // alert('Error occurred while submitting form. Please try again later.');
+                        console.error(xhr.responseText);
+                    }
+                });
+                return false;
+
+            }
+        });
+    }
+});
