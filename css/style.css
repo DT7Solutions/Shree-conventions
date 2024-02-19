@@ -928,12 +928,30 @@ blockquote p:after{
     right:10px
 }
 .owl-controls .owl-pagination{
-    font-size:0
+    font-size:0;
 }
 .owl-controls .owl-pagination .owl-page{
     font-size:14px;
     display:inline-block;
     /* width:150px; */
+    width:10px;
+    height:10px;
+    border:2px solid #333;
+    margin:0 5px;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100px;
+    -webkit-transition:all .2s ease;
+    -moz-transition:all .2s ease;
+    -ms-transition:all .2s ease;
+    -o-transition:all .2s ease
+}
+.owl-controls .owl-pagination .owl-page.active{
+    background-color:#e1bd85
+}
+.guestbook-content .owl-controls .owl-pagination .owl-page{
+    font-size:14px;
+    display:inline-block;
     width:25%;
     height:5px;
     border:0.5px solid #333;
@@ -946,7 +964,7 @@ blockquote p:after{
     -ms-transition:all .2s ease;
     -o-transition:all .2s ease
 }
-.owl-controls .owl-pagination .owl-page.active{
+.guestbook-content .owl-controls .owl-pagination .owl-page.active{
     background-color:#e1bd85
 }
 .hover-zoom{
@@ -1912,11 +1930,13 @@ blockquote p:after{
     display: inline-block;
 }
 .accomd-modations{
-    padding:40px 0;
+    /* padding:40px 0; */
+    padding:20px 0px 40px 0;
     position:relative
 }
 .section-accomd .our-gallery {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    margin-bottom: 30px;
 }
 .accomd-modations .accomd-modations-content{
     margin-top:-30px
@@ -1931,8 +1951,13 @@ blockquote p:after{
     text-align:center;
     margin-top:20px
 }
-.accomd-modations-header{
+.accomd-modations .accomd-modations-header{
     margin-top:30px;
+    text-align:center
+}
+.accomd-modations-header{
+    /* margin-top:30px; */
+    margin-top:75px;
     text-align:center
 }
 .accomd-modations-header p{
@@ -2315,7 +2340,8 @@ blockquote p:after{
     padding-left: 35px;
 }
 .section-about .content {
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin-top: 70px;
     margin-bottom: 30px;
 }
 .section-about .content .featured {
@@ -2327,6 +2353,9 @@ blockquote p:after{
     font-size: 24px;
     font-weight: 500;
     color:#E1BD85;
+}
+.section-about .details {
+    margin: 20px 0px 40px 0px;
 }
 .section-about .details p{
     text-align: justify;
@@ -2737,7 +2766,8 @@ blockquote p:after{
 .section_page-gallery{
     background-color:#fff;
     padding-top:40px;
-    padding-bottom:120px
+    /* padding-bottom:120px */
+    padding-bottom:75px
 }
 .gallery .heading{
     margin-bottom:40px
@@ -4015,7 +4045,8 @@ blockquote p:after{
 }
 .section-restaurant-4{
     padding-top:45px;
-    padding-bottom:85px
+    /* padding-bottom:85px */
+    padding-bottom:50px
 }
 .restaurant_title .time{
     color:#898989;
@@ -4309,8 +4340,8 @@ blockquote p:after{
     color:#e1bd85
 }
 .section-room{
-    padding-top:6px;
-    padding-bottom:99px
+    padding-top:45px;
+    padding-bottom:50px
 }
 .section-room-services-section{
     /* padding-top:45px; */
@@ -4679,7 +4710,20 @@ blockquote p:after{
     color:#898989;
     margin-bottom:0;
     font-size:15px;
-    margin-top:30px
+    /* margin-top:30px; */
+    margin-top:15px;
+    text-indent: 3em;
+    text-align: justify;
+}
+.service-details-content .text-thumbs .thumbs{
+    width:300px;
+    float:left;
+    margin-right:50px;
+    margin-top:120px;
+    position:relative
+}
+.service-details-gallery{
+    padding: 0px;
 }
 .room_item-3 .text-thumbs .text p b{
     color:#333333
@@ -4769,10 +4813,15 @@ blockquote p:after{
     color:#898989;
     margin-bottom:0;
     font-size:15px;
-    margin-top:30px
+    margin-top:25px;
+    text-align: justify;
+    text-indent: 3rem;
 }
 .room_item-4 .text p b{
     color:#333333
+}
+.room_item-4 .text ul{
+    margin: 15px;
 }
 .room_item-4 .text .awe-btn{
     font-weight:bold;
@@ -5124,7 +5173,8 @@ blockquote p:after{
     margin-top:100px
 }
 .room-wrap-3{
-    margin-top:-100px
+    /* margin-top:-100px */
+    margin-top:-75px
 }
 .room-wrap-3 .room_item-3{
     margin-top:100px
@@ -6329,8 +6379,8 @@ blockquote p:after{
 
 .section-about-founder{
     background-color: #FBF6EF;
-    /* padding-bottom:30px; */
-    /* padding-top:40px */
+    padding-bottom:30px;
+    padding-top:40px
 }
 .section-about-founder .about{
     margin-top:40px;
@@ -6345,8 +6395,8 @@ blockquote p:after{
 }
 .section-about-why-choose {
     background-color:#fff;
-    /* padding-bottom:30px; */
-    /* padding-top:40px */
+    padding-bottom:30px;
+    padding-top:40px
 }
 .section-about-why-choose .about{
     margin-top:40px;
@@ -7257,6 +7307,9 @@ blockquote p:after{
     padding-top:12px;
     padding-bottom:12px;
     font-size:15px
+}
+.contact .contact-form  label{
+    color: red;
 }
 .contact-map{
     height:470px;
@@ -9147,7 +9200,16 @@ blockquote p:after{
         margin-right:20px
     }
     .section-room{
-        padding-bottom:60px
+        padding-top:35px; 
+        padding-bottom:30px
+    }
+    .section-about-founder{
+        padding-bottom:15px;
+        padding-top:20px
+    }
+    .section-about-why-choose {
+        padding-bottom:15px;
+        padding-top:20px
     }
     .post .entry-media .count-date{
         padding:10px 20px
@@ -9635,7 +9697,8 @@ blockquote p:after{
         font-size:24px
     }
     .section-room{
-        padding-bottom:20px
+        padding-top:25px; 
+        padding-bottom:40px
     }
     .room_item-1 h2{
         font-size:24px

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <!-- TITLE -->
-    <title>Sangeeth</title>
+    <title>Booking Form</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
@@ -27,6 +27,116 @@
     <!-- MAIN STYLE -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     
+    <style>
+    
+        .booking-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            position: relative;
+        }
+        .booking-form input[type="text"],
+        .booking-form input[type="email"],
+        .booking-form input[type="tel"],
+        .booking-form input[type="date"],
+        .booking-form select,
+        .booking-form textarea {
+            width: 100%;
+            height: 50px;
+            border-radius: 3px;
+            border: 2px solid transparent;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        .booking-form textarea {
+            height: 150px;
+        }
+        .booking-form select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%23343a40"><path d="M15.4 7.6c-.2-.2-.5-.2-.7 0l-3.7 3.7-3.7-3.7c-.2-.2-.5-.2-.7 0-.2.2-.2.5 0 .7l4 4c.1.1.2.2.3.2s.2-.1.3-.2l4-4c.2-.2.2-.5 0-.7z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 25px;
+            padding-right: 30px;
+        }
+        .booking-form .form-check-label {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .booking-form .form-check-input[type="checkbox"],
+        .booking-form .form-check-input[type="radio"] {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .booking-form .form-check-input[type="checkbox"] + .form-check-label,
+        .booking-form .form-check-input[type="radio"] + .form-check-label {
+            display: inline-block;
+            cursor: pointer;
+        }
+        .booking-form .form-check-input[type="checkbox"]:focus + .form-check-label,
+        .booking-form .form-check-input[type="radio"]:focus + .form-check-label {
+            outline: none;
+            border-color: #66afe9;
+        }
+        .booking-form .form-check-input[type="checkbox"]:checked + .form-check-label::before,
+        .booking-form .form-check-input[type="radio"]:checked + .form-check-label::before {
+            content: "\2022";
+            font-size: 20px;
+            color: #007bff;
+            line-height: 1em;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        .booking-form button {
+            width: 100%;
+            height: 50px;
+            border-radius: 3px;
+            padding: 0 30px;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #e1bd85;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+            box-sizing: border-box;
+            transition: background-color 0.3s;
+        }
+        .booking-form button:hover {
+            background-color: #cfa569;
+        }
+        .booking-form button:focus {
+            outline: none;
+        }
+        .booking-form input[type="text"]:focus,
+        .booking-form input[type="email"]:focus,
+        .booking-form input[type="tel"]:focus,
+        .booking-form input[type="date"]:focus,
+        .booking-form select:focus,
+        .booking-form textarea:focus {
+            border-color: #e1bd85;
+        }
+    </style>
+    
+    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            // emailjs.init("Account Public Key");
+            emailjs.init("ZyO1qs66SY_EtdXHF");
+        })();
+    </script>
+
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -80,7 +190,7 @@
                     <!-- HEADER MENU -->
                     <nav class="header_menu">
                         <ul class="menu">
-                            <li class="current-menu-item">
+                            <li>
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
@@ -93,35 +203,10 @@
                                     <li><a href="amentities-Facilities-details.html">Facilities</a></li>
                                 </ul>
                             </li>
-                            <!-- 
-                            <li>
-                                <a href="#">Page <span class="fa fa-caret-down"></span></a>
-                                <ul class="sub-menu">                                    
-                                    <li>
-                                        <a href="#">Event <span class="fa fa-caret-right"></span></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="events.html">Events</a></li>
-                                            <li><a href="events-fullwidth.html">Events Fullwidth</a></li>
-                                            <li><a href="events-detail.html">Events Detail</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Term Condition <span class="fa fa-caret-right"></span></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="term-condition.html">Term Condition 1</a></li>
-                                            <li><a href="term-condition-2.html">Term Condition 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="shortcode.html">ShortCode</a></li>
-                                    <li><a href="page-404.html">404 Page</a></li>
-                                    <li><a href="comingsoon.html">Comming Soon</a></li>
-                                </ul>
-                            </li> -->
-
                             <li>
                                 <a href="gallery.html">Gallery</a>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li class="current-menu-item"><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                     <!-- END / HEADER MENU -->
@@ -138,186 +223,119 @@
 
         </header>
         <!-- END / HEADER -->
-
+        
         <!-- SUB BANNER -->
-        <section class="section-sub-banner bg-9">
-            <div class="awe-overlay"></div>
+        <section class="section-sub-banner bg-12">
             <div class="sub-banner">
                 <div class="container">
                     <div class="text text-center">
-                        <h2 class="text-uppercase">Sangeeth</h2>
-                        <p>Dance to the rhythm of love in a vibrant celebration of musical harmony.</p>
+                        <h2>BOOKING NOW</h2>
+                        <p>Get in touch with us for inquiries and bookings</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- END / SUB BANNER -->
 
-        <!-- SERVICE DETAILS -->
-        <section class="section-room bg-white">
+        <!-- BOOKING -->
+        <section class="section-booking">
             <div class="container">
+                <div class="booking">
 
-                <div class="room-wrap-3">
+                    <div class="text">
+                        <h2>Booking</h2>
+                    </div>                    
+
                     <div class="row">
-                        <div class="col-lg-10 col-lg-offset-1">
 
-                            <!-- ITEM -->
-                            <div class="room_item-3 service-details-content">
-
-                                <div class="img">
-                                    <a href="">
-                                        <img src="images/room/2.png" onmouseover="this.src='images/room/3.png'" onmouseout="this.src='images/room/2.png'" class="img-fluid img" alt="" >
-                                    </a>
-                                </div>
-                                <div class="text-thumbs">
-
-                                    <div class="thumbs">
-                                       <img src="images/room/1.png" alt="">
+                        <div class="col-xs-12 col-md-12 col-lg-12">
+                            <div class="booking-form">
+                                <form id="bookingForm" action="submit" method="post"> 
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control mb-3" name="name" placeholder="Name">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="tel" class="form-control mb-3" name="phone" placeholder="Phone Number">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="email" class="form-control mb-3" name="email" placeholder="Email">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control mb-3" name="subject" placeholder="Subject">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="form-control mb-3" name="event" required>
+                                                <option value="">Select Event</option>
+                                                <option value="wedding">Wedding</option>
+                                                <option value="conference">Conference</option>
+                                                <option value="party">Party</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="date" class="form-control mb-3" name="date" placeholder="Date">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="form-control mb-3" name="duration" required>
+                                                <option value="">Select Duration</option>
+                                                <option value="half_day">Half Day</option>
+                                                <option value="full_day">Full Day</option>
+                                                <option value="multiple_days">More than One Day</option>
+                                                <option value="other_duration">Others</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="form-control mb-3" name="session" required>
+                                                <option value="">Select Session</option>
+                                                <option value="morning">Morning Session</option>
+                                                <option value="evening">Evening Session</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="food" name="food" class="form-check-input">
+                                                        <label for="food" class="form-check-label">Food Required</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="decorations" name="decorations" class="form-check-input">
+                                                        <label for="decorations" class="form-check-label">Decorations</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="dj" name="dj" class="form-check-input">
+                                                        <label for="dj" class="form-check-label">DJ</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="photography" name="photography" class="form-check-input">
+                                                        <label for="photography" class="form-check-label">Photography</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <textarea class="form-control mb-3" name="message" rows="5" placeholder="Write what do you want"></textarea>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <button type="submit" class="btn btn-primary">SEND</button>
+                                        </div>
                                     </div>
-
-                                    <div class="text">
-                                        <h2 class="text-uppercase"><a href="">Sangeeth</a></h2>
-                                        <span class="price">Experience Timeless Elegance</span>
-                                        <p>
-                                            Dance to the rhythm of love at Shree Conventions Center's Sangeeth event. Our vibrant ambiance and 
-                                            customizable setups provide the perfect canvas for an evening filled with music, dance, and joy. 
-                                            Whether you envision an intimate gathering of close family and friends or a lively extravaganza with 
-                                            colorful decorations and live entertainment, our dedicated team will bring your vision to life. 
-                                        </p>
-                                        <p>
-                                            Indulge in a sumptuous buffet of regional delicacies and refreshing beverages as you celebrate 
-                                            the union of two souls with laughter, song, and dance. Create memories that resonate with the 
-                                            melodies of your heart and cherish them for years to come.
-                                        </p>
-                                        <!-- <a href="#" class="awe-btn awe-btn-13">VIEW DETAILS</a> -->
-                                    </div>
-
-                                </div>
-
-                            </div>    
-                            <!-- END / ITEM -->
- 
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- END / SERVICE DETAILS -->
-
-        <!-- SERVICE GALLERY -->
-        <section class="section-accomd service-details-gallery" >
-            <div class="container">
-                <div class="accomd-modations">
-                    <div class="row justify-content-center">
-                        <div class="col-md-12 ">
-                            <div class="accomd-modations-header">
-                                <h2 class="headingmt-5 text-uppercase">Sangeeth</h2>
-                                <img src="images/icon-accmod.png" alt="icon">
-                                <p>
-                                    Explore our captivating gallery showcasing stunning images from past events. 
-                                    Get inspired and envision your dream event at Shree Convention Center.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="accomd-modations-content ">
+                                </form>
                                 
-                                <div class="row justify-content-center">
-
-                                    <!-- ITEM -->
-                                    <div class="col-xs-4">
-                                        <div class="accomd-modations-room">
-                                            <div class="img">
-                                                <a href=""><img src="images/room/1.png" alt=""></a>
-                                            </div>
-                                            <div class="text">
-                                                <!-- <h2><a href="#">Celebrations</a></h2> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END / ITEM -->
-                                    
-                                    <!-- ITEM -->
-                                    <div class="col-xs-4">
-                                        <div class="accomd-modations-room">
-                                            <div class="img">
-                                                <a href=""><img src="images/room/2.png" alt=""></a>
-                                            </div>
-                                            <div class="text">
-                                                <!-- <h2><a href="#">Parties</a></h2> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END / ITEM -->
-                                    
-                                    <!-- ITEM -->
-                                    <div class="col-xs-4">
-                                        <div class="accomd-modations-room">
-                                            <div class="img">
-                                                <a href=""><img src="images/room/3.png" alt=""></a>
-                                            </div>
-                                            <div class="text">
-                                                <!-- <h2><a href="#">Meetings</a></h2> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END / ITEM -->
-                                    
-                                    <!-- ITEM -->
-                                    <div class="col-xs-4">
-                                        <div class="accomd-modations-room">
-                                            <div class="img">
-                                                <a href=""><img src="images/room/4.png" alt=""></a>
-                                            </div>
-                                            <div class="text">
-                                                <!-- <h2><a href="#">Dining</a></h2> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END / ITEM -->
-                                    
-                                    <!-- ITEM -->
-                                    <div class="col-xs-4">
-                                        <div class="accomd-modations-room">
-                                            <div class="img">
-                                                <a href=""><img src="images/room/5.png" alt=""></a>
-                                            </div>
-                                            <div class="text">
-                                                <!-- <h2><a href="#">Decorations</a></h2> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END / ITEM -->
-
-                                    
-                                    <!-- ITEM -->
-                                    <div class="col-xs-4">
-                                        <div class="accomd-modations-room">
-                                            <div class="img">
-                                                <a href=""><img src="images/room/6.png" alt=""></a>
-                                            </div>
-                                            <div class="text">
-                                                <!-- <h2><a href="#">Services</a></h2> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END / ITEM -->
-
-
-                                </div>
-
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="our-gallery text-center">
-                    <a href="gallery.html" class="awe-btn awe-btn-default">BROWSE OUR GALLERY</a>
+
+                    </div>  
                 </div>
             </div>
-
         </section>
-        <!-- END / SERVICE GALLERY -->
+        <!-- END / BOOKING -->
 
         <!-- FOOTER -->
         <footer id="footer">
@@ -349,12 +367,6 @@
                                     <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
                                     <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
                                     <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                                    <!-- <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-youtube-play"></i></a> -->
-                                    <!-- <a href="#"><i class="fa fa-pinterest"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a> -->
                                 </div>
                             </div>
                         </div>
@@ -420,8 +432,6 @@
                                     <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
                                     <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i> Twitter </a></li>
                                     <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play"></i> Youtube </a></li>
-                                    <!-- <li><a href="https://www.pinterest.com"><i class="fa fa-pinterest"></i> Pinterest</a></li>
-                                    <li><a href="https://plus.google.com"><i class="fa fa-google-plus"></i> Google+ </a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -447,7 +457,7 @@
         <!-- END / FOOTER -->
 
         <div class="contact-us">
-            <a href="https://wa.me/9666618459"   target="_blank" class="float"><i class="fa fa-whatsapp my-float"></a></i>
+            <a href="https://wa.me/9666618459" target="_blank" class="float"><i class="fa fa-whatsapp my-float"></i></a>
         </div>
 
     </div>
@@ -459,6 +469,7 @@
     <script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lib/bootstrap-select.js"></script>
+    <script src="//maps.google.com/maps/api/js?key=AIzaSyAb2lfsiytHD7rMhBaAvJz2CKhk05uiIuE"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
     <script type="text/javascript" src="js/lib/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="js/lib/jquery.themepunch.revolution.min.js"></script>
@@ -470,6 +481,10 @@
     <script type="text/javascript" src="js/lib/jquery.parallax-1.1.3.js"></script>
     <script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/lib/SmoothScroll.js"></script>
+    <!-- validate -->
+    <script type="text/javascript" src="js/lib/jquery.form.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.validate.min.js"></script>
+    <!-- Custom jQuery -->
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

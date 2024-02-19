@@ -93,7 +93,9 @@
   .ot-accomd-modations {
     margin-top: 0 !important; }
     .ot-accomd-modations .ot-heading {
-      padding-top: 20px !important; }
+      /* padding-top: 20px !important; */
+      padding-top: 40px !important;
+     }
   .section-home-guestbook.home-guestbook-style-2 {
     margin-top: 20px !important; }
   .ot-out-best .item .info,
