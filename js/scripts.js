@@ -1444,11 +1444,20 @@ $(document).ready(function() {
                 
 
                 // Using Email.js for mail sending
-                emailjs.send("Service_ID", "Template_ID", formData)
+                // emailjs.send("Service_ID", "Template_ID", formData)
                 emailjs.send("service_tnxor7l", "template_cf9wiop", jsonData)
                 .then(function(response) {
                     console.log("Email sent successfully:", response);
                     alert("Thank you, " + name + "! Your message has been sent successfully.");
+                    
+                    /*
+                    Check Form Submit Data in Gmail Inbox Credentials 
+                    are Bellow for check the Form Response
+                    Gmail and Email.js accounts 
+                    ---------- User ID:- shreeconventionguntur@gmail.com -----------, 
+                    -----------Password:- Shree@1234 -------------------------------
+                    */
+
                 }, function(error) {
                     console.error("Email sending failed:", error);
                     alert("Sorry, " + name + ". There was an error while sending your message. Please try again later.");
