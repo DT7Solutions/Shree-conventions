@@ -5,6 +5,12 @@ a:hover,a:focus,input:focus,textarea:focus,button:focus,select:focus{
     outline:none !important;
     text-decoration:none
 }
+ #lightbox {
+        margin-top:20%;
+      
+    }
+
+         
 body{
     position:relative;
     font-family:'Hind';
