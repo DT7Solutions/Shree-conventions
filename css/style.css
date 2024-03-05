@@ -7310,7 +7310,7 @@ blockquote p:after{
     height:210px
 }
 .contact .contact-form .awe-btn{
-    margin-top:20px;
+    margin-top:50px;
     width:200px;
     padding-top:12px;
     padding-bottom:12px;
@@ -7329,7 +7329,7 @@ blockquote p:after{
 }
 
 .contactdetails {
-    margin: 20px 10px;
+    margin: 0% 2% 20% 2%;
 }
 .contactdetails .row {
     /* display: flex;
@@ -9229,6 +9229,12 @@ blockquote p:after{
     #footer .footer_bottom{
         display: flex;
         flex-wrap: wrap;
+    }
+    .contactdetails {
+        margin: 10% 2%;
+    }
+    .contactdetails .col-lg-12 {
+        padding: 20px 5px;
     }
 }
 @media (max-width:767px) and (min-width:460px){
