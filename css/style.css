@@ -1614,8 +1614,9 @@ blockquote p:after{
 }
 .header_mobile .container{
     position:relative;
-    padding-top:10px;
-    padding-bottom:10px
+    padding: 20px 10px;
+    /* padding-top:10px;
+    padding-bottom:10px */
 }
 .header_mobile .header_logo{
     display:inline-block
@@ -4706,6 +4707,7 @@ blockquote p:after{
     color:#e1bd85
 }
 .room_item-3 .text-thumbs .text .price{
+    font-size: 14px;
     display:block;
     color:#333333;
     text-transform:uppercase;
