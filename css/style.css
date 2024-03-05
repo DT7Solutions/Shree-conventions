@@ -7329,7 +7329,7 @@ blockquote p:after{
 }
 
 .contactdetails {
-    /* margin-top: 20px; */
+    margin: 20px 10px;
 }
 .contactdetails .row {
     /* display: flex;
