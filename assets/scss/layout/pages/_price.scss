@@ -1,0 +1,113 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.6 cta css start
+/*----------------------------------------*/
+.rr-pricing {
+	&-tag {
+		font-family: var(--rr-ff-h);
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 34px;
+		color: var(--rr-heading-1);
+		margin: 0;
+		margin-bottom: 30px;
+		@media #{$sm, $xs} {
+			font-size: 20px;
+		}
+		& span {
+			font-family: var(--rr-ff-h);
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 24px;
+			text-align: center; 
+			color: var(--rr-theme-1);
+		}
+	}
+
+	&-item {
+		background: var(--rr-common-white);
+		box-shadow: 0px 20px 40px rgba(5, 17, 69, 0.1);
+		padding: 30px 60px;
+		padding-bottom: 40px;
+		&-medial {
+			padding: 30px 26px;
+			padding-bottom: 40px;
+		}
+		@media #{$md, $sm, $xs} {
+			height: 100%;
+			margin-bottom: 30px;
+		}
+		@media #{$sm, $xs} {
+			padding: 30px 20px;
+			
+		}
+	
+	
+		&::before {
+			position: absolute;
+			top: 178px;
+			left: 0;
+			content: '';
+			background: rgba(5, 17, 69, 0.1);
+			width: 100%;
+			height: 1px;
+		}
+
+		&.active {
+			box-shadow: 0px 20px 40px rgba(5, 17, 69, 0.1), inset 0px 4px 0px #1B7261;
+			position: relative;
+			z-index: 2;
+			margin-top: -45px;
+			@media #{$md, $sm, $xs} {
+				margin-top: 0px;
+			}
+		}
+	}
+
+	&-list {
+		margin-bottom: 40px;
+
+		& ul {
+			& li {
+				font-family: var(--rr-ff-p);
+				font-style: normal;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 26px;
+				text-align: center;
+				color: #54595F;
+				margin-bottom: 24px;
+				list-style: none;
+				@media #{$sm, $xs} {
+					& br {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	&-price {
+		font-family: var(--rr-ff-h);
+		font-style: italic;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 64px;
+		color: var(--rr-heading-1);
+		margin: 0;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+
+		& span {
+			font-family: var(--rr-ff-h);
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 28px;
+			color: #54595F;
+		}
+
+	}
+}

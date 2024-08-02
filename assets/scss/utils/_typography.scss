@@ -1,0 +1,19 @@
+$font-url: 'https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Sail&display=swap" rel="stylesheet';
+
+// font family
+$font-family: (
+    'ff': (
+        'body': "'Libre Bodoni', sans-serif",
+        'h': "'Libre Bodoni', sans-serif",
+        's': "'sail', system-ui",
+        'p': "'Open Sans', sans-serif",
+        'fontawesome': '"Font Awesome 6 Pro"',
+    )
+);
+// font size
+$font-size: (
+    'fz': (
+        'body': 16px,
+        'p': 16px,
+    )
+);

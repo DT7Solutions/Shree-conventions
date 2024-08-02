@@ -1,0 +1,100 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.23 video css start
+/*----------------------------------------*/
+.rr-video {
+    &-main {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 500px;
+        object-fit: cover;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: #051145;
+            opacity: .4;
+        }
+    }
+
+    &-shap-right {
+        position: absolute;
+        right: 195px;
+        bottom: -8px;
+        -webkit-animation: upDown 1.3S infinite alternate;
+        animation: upDown 1.3S infinite alternate;
+    }
+
+    &-thumb {
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-shap-left {
+        position: absolute;
+        left: 243px;
+        top: 200px;
+        -webkit-animation: upDown 1.3S infinite alternate;
+        animation: upDown 1.3S infinite alternate;
+    }
+
+    &-thumb {
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background: var(--rr-theme-1);
+            opacity: .7;
+        }
+    }
+
+    &-play {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        transition: .4s;
+
+        & a {
+            display: inline-block;
+            height: 90px;
+            width: 90px;
+            line-height: 90px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 50%;
+            color: var(--rr-theme-1);
+            background-color: var(--rr-common-white);
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                left: 50%;
+                top: 50%;
+                width: 65%;
+                height: 65%;
+                background-color: rgba(255, 255, 255, 0.671);
+                animation: borderanimate2 2.5s linear infinite;
+                z-index: -1;
+                border-radius: 50%;
+
+            }
+        }
+    }
+
+}

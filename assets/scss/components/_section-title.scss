@@ -1,0 +1,132 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.15 Section Title
+/*----------------------------------------*/
+
+.rr-section {
+    &-subtitle {
+        color: var(--rr-theme-1);
+        padding-bottom: 10px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        font-family: var(--rr-ff-s);
+        display: block;
+        margin-bottom: 0;
+        @media #{$xs} {
+            font-size: 18px;
+        }
+
+        & img {
+            margin-bottom: -4px;
+        }
+    }
+    &-main {
+        & p {
+            @media #{$lg, $md, $sm, $xs} {
+               & br {
+                display: none;
+               }
+            }
+        }
+    }
+    &-title {
+        margin-bottom: 0;
+        line-height: 1.2;
+        color: var(--rr-heading-1);
+        font-family: var(--rr-ff-h);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        margin-bottom: 0;
+
+        @media #{$xxl} {
+            font-size: 35px;
+        }
+
+        @media #{$xl} {
+            font-size: 32px;
+        }
+
+        @media #{$lg} {
+            font-size: 35px;
+        }
+
+        @media #{$md} {
+            font-size: 35px;
+
+            & br {
+                display: none;
+            }
+        }
+
+        @media #{$xs} {
+            font-size: 27px;
+
+            & br {
+                display: none;
+            }
+        }
+
+
+    }
+    &-white-subtitle {
+        color: var(--rr-common-white);
+        padding-bottom: 10px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        font-family: var(--rr-ff-s);
+        display: block;
+        margin-bottom: 0;
+        @media #{$xs} {
+            font-size: 18px;
+        }
+
+        & img {
+            margin-bottom: -4px;
+        }
+    }
+
+    &-white-title {
+        margin-bottom: 0;
+        line-height: 1.2;
+        color: var(--rr-common-white);
+        font-family: var(--rr-ff-h);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        margin-bottom: 0;
+        
+        @media #{$xxl} {
+            font-size: 35px;
+        }
+
+        @media #{$xl} {
+            font-size: 32px;
+        }
+
+        @media #{$lg} {
+            font-size: 35px;
+        }
+
+        @media #{$md} {
+            font-size: 35px;
+
+            & br {
+                display: none;
+            }
+        }
+
+        @media #{$xs} {
+            font-size: 27px;
+
+            & br {
+                display: none;
+            }
+        }
+
+
+    }
+}

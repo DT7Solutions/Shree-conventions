@@ -1,0 +1,407 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --rr-ff-body: 'Poppins' !important;
+    --rr-ff-h: 'Libre Bodoni', sans-serif;
+    --rr-ff-s: 'sail', system-ui;
+    --rr-ff-p: 'Open Sans', sans-serif;
+    /* --rr-ff-h: 'Poppins';
+    --rr-ff-s: 'Poppins'; 
+    --rr-ff-p: 'Poppins'; */
+    /* --rr-theme-1: #F2A61E;
+    --rr-heading-1: #EA1D24;
+    --rr-text-body: #54595F; */
+    --rr-theme-1: #ED7D31;
+    --rr-heading-1: #833C0B;
+    --rr-text-body: #000000;
+    --rr-links: #C00000;
+}
+
+img,
+img:hover{
+    border-radius: 8px;
+}
+
+.rr-btn,
+.rr-btn-2,
+.rr-btn-white{
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+.rr-btn::before,
+.rr-btn-2::before,
+.rr-btn-white::before {
+    display: none;
+}
+.rr-btn::after,
+.rr-btn-2::after,
+.rr-btn-white::after {
+    border-radius: 6px;
+}
+
+
+.preloader-close {
+    position: fixed;
+    font-size: 26px;
+    background: transparent;
+}
+
+/* Base */
+.btn-floating:hover img {
+    margin-bottom: -3px
+}
+.btn-floating {
+    position: fixed;
+    right: 25px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px 0 0 12px;
+    border: 0;
+    z-index: 9999;
+    color: white;
+    transition: .2s;
+}
+.btn-floating:hover {
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+} 
+.btn-floating span {
+    font-size: 16px;
+    margin-left: 5px;
+    transition: .2s;
+    line-height: 0px;
+    display: none;
+}
+.btn-floating:hover span {
+    display: inline-block;
+}
+/* Phone */
+.btn-floating.phone {
+    bottom: 30%;
+    right: 0%;
+    background-color: #760f10;
+}
+.btn-floating.phone:hover {
+    background-color: #c03421;
+}
+/* WhatsApp */
+.btn-floating.whatsapp {
+    background-color: #34af23;
+    bottom: 20%;
+    right: 0%;
+}
+.btn-floating.whatsapp:hover {
+    background-color: #1f7a12
+}
+
+
+/* Header Section */
+.rr-header-menu nav ul li > a {
+    color: #232323 !important;
+    padding: 10px 0px !important;
+}
+.search__popup {
+    padding: 5%;
+    height: 100%;
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.search__top {
+    margin-bottom: 2.5%;
+}
+#header-sticky .rr-hero-2-area {
+    background: transparent !important;
+}
+.rr-header-2-area .header-sticky {
+    background: rgba(255, 255, 255, 0.95) !important;
+}
+.rr-header-2-menu::before {
+    width: 0% !important;
+}
+
+/*  Sub Header Section */
+.breadcrumb__height {
+    max-height: 300px;
+}
+
+
+/* Hero Section */
+.rr-hero-space {
+    max-height: 600px !important;
+    padding-top: 7.5%;
+}
+.rr-hero-shape,
+.rr-hero-shape2 {
+    top: -12.5% !important;
+}
+.rr-hero-shape img,
+.rr-hero-shape2 img {
+    scale: 0.75;
+}
+.rr-hero-2-content {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    max-width: 100%;
+    padding: 5% 1.5%;
+}
+.rr-hero-title2 {
+    margin-bottom: 0.5%;
+}
+.rr-hero-2-content .content {
+    font-family: var(--rr-ff-p);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 2.5%;
+    text-align: center;
+    color: #fff;
+    transform: translateX(-80px);
+    opacity: 0;
+}
+.rr-hero-2-area .swiper-slide.swiper-slide-active .rr-hero-2-content .content {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 2500ms ease;
+}
+
+/* About Section */
+.rr-about-info {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(5, 17, 69, 0.1);
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 40px;
+    margin-left: -85px;
+    position: relative;
+    z-index: 1;
+    margin-top: 15px;
+    padding-bottom: 50px;
+    border-radius: 12px;
+}
+.rr-about-thumb img {
+    border-radius: 12px;
+}
+.rr-about-info p {
+    text-align: justify;
+}
+
+/* Video Section */
+.rr-video-thumb::before {
+    background: var(--rr-text-body);
+    border-radius: 12px;
+}
+.rr-video-thumb img {
+    border-radius: 12px;
+}
+.section-videoplay {
+    position: relative;
+    overflow: hidden;
+}
+.section-videoplay video {
+    display: block;
+}
+
+
+/* Services Section */
+.rr-service-3-item {
+    display: flex;
+    max-width: 400px;
+    min-height: 400px;
+    text-align: center;
+    padding: 5% 7.5%;
+    border-radius: 12px;
+    border: 1px solid gold;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.rr-service-3-item:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(5, 10, 10, 0.5);
+    padding: 5% 7.5%;
+    border-radius: 12px;
+}
+.rr-service-3-icon {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: var(--rr-theme-1);
+    border-radius: 50px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 24px;
+    transition: 0.3s;
+    position: relative;
+}
+.rr-service-3-icon::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    line-height: 0;
+    background-color: var(--rr-heading-1);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.rr-service-3-item:hover .rr-service-3-icon img {
+    filter: none;
+    transform: scale(1.1);
+}
+
+/* Our Spaces Works Section */
+.rr-work-thumb,
+.rr-work-thumb::before {
+    border-radius: 8px;
+}
+.rr-work-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+/* CTA Section */
+.rr-cta-bg-img::before {
+    opacity: 0.5;
+}
+
+/* Footer Section */
+.our-gallery__item img{
+    min-height: 65px !important;
+    border: 1px solid var(--rr-theme-1);
+}
+.our-gallery__item::before {
+    border-radius: 8px;
+}
+
+
+/* breadcrumb Css Override Style */
+.rr-footer-2-title,
+.breadcrumb__title,
+.rr-contact__title  {
+    color: var(--rr-heading-1);
+}
+.rr-contact-item-content a {
+    color: var(--rr-text-body);
+}
+
+/* About Page */
+.rr-project-slider-content {
+    border-radius: 8px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(5, 17, 69, 0.1);
+    padding: 21px 25px;
+    margin: 0 30px;
+    margin-top: -64px;
+    position: relative;
+}
+.rr-project-btn a {
+    font-family: var(--rr-ff-p);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #54595F;
+}
+.rr-project-btn:hover a {
+    color: var(--rr-theme-1);
+}
+
+
+/* Services Page */
+.rr-service-item {
+    display: flex;
+    max-width: 400px;
+    min-height: 400px;
+    text-align: center;
+    padding: 5% 7.5%;
+    border-radius: 12px;
+    border: 1px solid gold;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.rr-service-item:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(5, 10, 10, 0.5);
+    padding: 5% 7.5%;
+    border-radius: 12px;
+}
+
+/* gallery Page */
+.nav-tabs .nav-link.active {
+    background-color: var(--rr-theme-1);
+    color: #fff;
+    border-color: var(--rr-theme-1);
+}
+.nav-tabs .nav-link {
+    color: #000;
+    border: 1px solid #ddd;
+}
+.nav-tabs .nav-link.active {
+    border: 1px solid var(--rr-theme-1);
+    border-bottom-color: transparent;
+}
+
+.rr-widget-gallery:hover .our-gallery__item::before {
+  transform: scale(1);
+}
+.rr-widget-gallery:hover.rr-widget-gallery a span {
+  opacity: 1;
+}
+.rr-widget-gallery a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.rr-widget-gallery a img {
+  width: 100%;
+  object-fit: cover;
+}
+.rr-widget-gallery .our-gallery__item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--rr-text-body);
+    transform: scale(0);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+/* Contact Page */
+.rr-contact__comment-form-box {
+    border-radius: 12px;
+    background: #F5F5F5;
+    padding: 30px;
+}
+.rr-contact-form-input-box input {
+    border-radius: 8px;
+    border: 1px solid rgba(5, 17, 69, 0.1);
+}

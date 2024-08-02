@@ -1,0 +1,202 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.6 cta css start
+/*----------------------------------------*/
+.rr-register {
+	&-sign {
+		@media #{$xs} {
+			margin-right: 0;
+			margin-bottom: 20px;
+
+		}
+	}
+
+	&-all-content {
+		padding: 40px;
+		background: #FFFFFF;
+		border: 1px solid rgba(5, 17, 69, 0.1);
+	}
+
+	&-button-wrap {
+		@media #{$sm, $xs} {
+			flex-wrap: wrap;
+		}
+	}
+
+	&-title {
+		font-family: var(--rr-ff-h);
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 45px;
+		text-align: center;
+		color: #051145;
+		margin: 0;
+		margin-bottom: 13px;
+
+		@media #{$xs} {
+			font-size: 28px;
+			line-height: 38px;
+		}
+	}
+
+	&-title-wrapper {
+		& p {
+			font-family: var(--rr-ff-p);
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 22px;
+			text-align: center;
+			color: #646464;
+		}
+	}
+
+	&-signup-item {
+		& input {
+			height: 50px;
+			line-height: 50px;
+			border: 1px solid rgba(5, 17, 69, 0.1);
+			margin-bottom: 20px;
+		}
+	}
+
+	&-input-title {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 22px;
+		color: #051145;
+		margin: 0;
+		margin-bottom: 10px;
+		@media #{$xs} {
+			font-size: 14px;
+		}
+	}
+
+	&-wrap {
+		& a {
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 16px;
+			color: #1B7262;
+		}
+	}
+
+	&-sign-check {
+		& span {
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 14px;
+			color: #54595F;
+
+		}
+	}
+
+	&-sing-buttom {
+		& a {
+			background: #1B7262;
+			text-align: center;
+			width: 100%;
+			display: inline-block;
+			height: 50px;
+			line-height: 50px;
+			font-family: var(--rr-ff-p);
+			font-weight: 600;
+			font-size: 16px;
+			color: #fff;
+			&:hover {
+				background-color: var(--rr-heading-1);
+			}
+		}
+	}
+
+	&-sign {
+
+		& a {
+			box-sizing: border-box;
+			background: #FFFFFF;
+			border: 1px solid rgba(5, 17, 69, 0.1);
+			padding: 13px 110px;
+			transition: .3s;
+			width: 100%;
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 16px;
+			color: #051145;
+			transition: .3s;
+			& svg, img {
+				margin-right: 10px;
+			}
+			@media #{$lg} {
+				padding: 10px 50px;
+			}
+	
+			@media #{$md} {
+				padding: 10px 15px;
+			}
+	
+			@media #{$sm} {
+				padding: 10px 15px;
+				margin: 0 5px;
+			}
+	
+			@media #{$xs} {
+				padding: 10px 10px;
+				margin: 0 5px;
+			}
+		}
+
+
+		& img {
+			transition: .3s;
+		}
+
+		&:hover {
+			
+
+			& a {
+				color: var(--rr-common-white);
+				background-color: #051145;
+			}
+
+			& img {
+				-webkit-filter: brightness(0) invert(1);
+				filter: brightness(0) invert(1);
+			}
+		}
+
+		&-social {
+			& h5 {
+				font-family: 'Open Sans';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 19px;
+				color: #051145;
+
+				& a {
+					color: #1B7262;
+				}
+			}
+		}
+	}
+	&-course-sidebar-list {
+		margin-bottom: 38px;
+	}
+}
+.woocs_price_code del {
+	font-family: var(--rr-ff-p);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 162%;
+	text-decoration: line-through;
+	color: #1b7261;
+	margin-right: 10px;
+}

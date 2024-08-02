@@ -1,0 +1,421 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.3 Buttons
+/*----------------------------------------*/
+.rr-btn {
+    &::before {
+        content: "";
+        border: 1px solid var(--rr-theme-1);
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.2s;
+        z-index: 2;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: var(--rr-heading-1);
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+    &:hover {
+        &.rr-btn::before {
+            top: 0;
+            left: 0;
+            border: 1px solid var(--rr-heading-1);
+        }
+
+        &.rr-btn::after {
+            width: 100%;
+        }
+
+        &.rr-btn {
+            color: var(--rr-common-white);
+        }
+    }
+
+    &:focus {
+        color: #fff;
+    }
+
+    font-size: 16px;
+    padding: 14px 20px;
+    position: relative;
+    font-family: var(--rr-ff-p);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    background-color: var(--rr-theme-1);
+    color: var(--rr-common-white);
+    letter-spacing: 0.03em;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+    & span, i {
+        position: relative;
+        z-index: 9;
+    }
+    @media #{$xsss} {
+        padding: 8px 11px;
+    }
+}
+.rr-btn-2 {
+    &::before {
+        content: "";
+        border: 1px solid var(--rr-heading-1);
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.2s;
+        z-index: 2;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: var(--rr-theme-1);
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+    &:hover {
+        &.rr-btn-2::before {
+            top: 0;
+            left: 0;
+            border: 1px solid var(--rr-theme-1);
+        }
+
+        &.rr-btn-2::after {
+            width: 100%;
+        }
+
+        &.rr-btn-2 {
+            color: var(--rr-common-white);
+        }
+    }
+
+    &:focus {
+        color: #fff;
+    }
+
+    font-size: 16px;
+    padding: 14px 20px;
+    outline: 0;
+    cursor: pointer;
+    position: relative;
+    font-family: var(--rr-ff-p);
+    font-weight: 600;
+    line-height: 26px;
+    background-color: var(--rr-heading-1);
+    color: var(--rr-common-white);
+    letter-spacing: 0.03em;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+    & span, i {
+        position: relative;
+        z-index: 9;
+    }
+}
+
+
+
+.rr-card {
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: var(--rr-heading-1);
+        transition: 0.5s;
+        z-index: -1;
+    }
+
+    &:hover {
+        &.rr-card::after {
+            width: 100%;
+        }
+
+        &.rr-card {
+            color: var(--rr-common-white);
+        }
+    }
+
+    &:focus {
+        color: #fff;
+    }
+
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    cursor: pointer;
+    position: relative;
+    font-family: var(--rr-ff-p);
+    font-weight: 600;
+    line-height: 26px;
+    background-color: var(--rr-theme-1);
+    color: var(--rr-common-white);
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+}
+
+
+
+.rr-btn-3 {
+    &::before {
+        content: "";
+        border: 1px solid var(--rr-heading-1);
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.2s;
+        z-index: 2;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: var(--rr-common-white);
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+    &:hover {
+        &.rr-btn-3::before {
+            top: 0;
+            left: 0;
+            border: 1px solid var(--rr-theme-1);
+        }
+
+        &.rr-btn-3::after {
+            width: 100%;
+        }
+
+        &.rr-btn-3 {
+            color: var(--rr-heading-1);
+        }
+    }
+
+    &:focus {
+        color: #fff;
+    }
+    font-size: 16px;
+    padding: 14px 20px;
+    position: relative;
+    font-family: var(--rr-ff-p);
+    font-weight: 600;
+    line-height: 26px;
+    background-color: var(--rr-heading-1);
+    color: var(--rr-common-white);
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+    & span, i {
+        position: relative;
+        z-index: 9;
+    }
+}
+.rr-btn-white {
+    &::before {
+        content: "";
+        border: 1px solid var(--rr-common-white);
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.2s;
+        z-index: 2;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: var(--rr-heading-1);
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+    &:hover {
+        &.rr-btn-white::before {
+            top: 0;
+            left: 0;
+            border: 1px solid var(--rr-heading-1);
+        }
+
+        &.rr-btn-white::after {
+            width: 100%;
+        }
+
+        &.rr-btn-white {
+            color: var(--rr-common-white);
+        }
+    }
+
+    &:focus {
+        color: #fff;
+    }
+    font-size: 16px;
+    padding: 14px 20px;
+    position: relative;
+    font-family: var(--rr-ff-p);
+    font-weight: 600;
+    line-height: 26px;
+    background-color: var(--rr-common-white);
+    color: var(--rr-heading-1);
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+    & span, i {
+        position: relative;
+        z-index: 9;
+    }
+}
+
+
+.rr-menu-btn {
+    font-family: var(--rr-ff-p);
+    background-color: var(--rr-theme-1);
+    color: var(--rr-common-white);
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    overflow: hidden;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    z-index: 9;
+
+    &:hover {
+        background-color: var(--rr-common-black);
+        color: var(--rr-common-white);
+    }
+
+    &:focus {
+        color: #fff;
+    }
+
+    @media #{$xl} {
+        width: 104px;
+        font-size: 14px;
+    }
+
+}
+
+
+.rr-btn-blog {
+    &:hover {
+        color: var(--rr-common-white);
+
+        &.rr-btn-blog::before {
+            width: 100%;
+        }
+
+        &.rr-btn-blog span i {
+            background-color: var(--rr-theme-1);
+        }
+    }
+
+    &:focus {
+        color: #fff;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background: var(--rr-heading-1);
+        transition: .5s;
+        z-index: -1;
+    }
+
+    font-family: var(--rr-ff-p);
+    background-color: var(--rr-theme-1);
+    color: var(--rr-common-white);
+    padding: 15px 40px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    overflow: hidden;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+
+    @media #{$xs} {
+        font-size: 14px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 30px;
+    }
+
+    & span {
+        & i {
+            color: #ffff;
+            background-color: #203240;
+            border-radius: 30px;
+            padding: 3px;
+            margin-left: 9px;
+            transition: .5s;
+
+        }
+    }
+}
+
+.rr-btn-solid {
+    font-family: var(--rr-ff-p);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    color: #001d08;
+
+    & span {
+        background: #1B7262;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        display: inline-block;
+        border-radius: 50px;
+        margin-left: 10px;
+        transition: .3s;
+        &:hover {
+            background-color: var(--rr-heading-1);
+        }
+    }
+}

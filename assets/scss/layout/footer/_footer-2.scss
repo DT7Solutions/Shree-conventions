@@ -1,0 +1,358 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  6.1 Footer Style 1
+/*----------------------------------------*/
+
+.rr-footer-2 {
+    &-subscribe {
+        & input {
+            border: 1px solid rgba(5, 17, 69, 0.1);
+            margin-bottom: 10px;
+        }
+    }
+
+    &-widget-content-info {
+        & ul {
+            & li {
+                list-style: none;
+                margin-bottom: 10px;
+
+                & a {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    align-items: center;
+                    color: #051145;
+
+                    & span {
+                        margin-right: 10px;
+                        border: 1px solid rgba(5, 17, 69, 0.1);
+                        height: 36px !important;
+                        width: 36px !important;
+                        line-height: 31px;
+                        text-align: center;
+                        border-radius: 50px;
+                        display: inline-block;
+                    }
+
+                    &:hover {
+                        color: #1B7261;
+                    }
+                }
+            }
+        }
+    }
+
+    &-widget-content-item {
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        & svg {
+            margin-top: -4px;
+            height: 18px;
+            width: 18px;
+            margin-right: 8px;
+        }
+    }
+
+    &-widget-content {
+        & p {
+            color: #54595F;
+            font-family: var(--rr-ff-p);
+            @media #{$lg,$md,$xs} {
+               & br {
+                display: none;
+               }
+            }
+        }
+    }
+
+    &-widget-content-item {
+        & a {
+            color: #54595F;
+            font-family: var(--rr-ff-p);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            transition: .3s;
+
+            &:hover {
+                color: var(--rr-theme-1);
+            }
+        }
+    }
+
+    &-title {
+        font-family: var(--rr-ff-h);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        margin-top: 5px;
+        margin-bottom: 23px;
+        color: #051145;
+    }
+
+    &-social {
+        & span {
+            font-family: var(--rr-ff-p);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            display: flex;
+            align-items: center;
+            color: #1B7261;
+            margin-right: 10px;
+            @media #{$lg,$md,$xs} {
+                font-size: 14px;
+            }
+        }
+
+        & a {
+            font-size: 18px;
+            display: inline-block;
+            height: 36px;
+            width: 36px;
+            line-height: 31px;
+            text-align: center;
+            margin-right: 10px;
+            border: 1px solid rgba(5, 17, 69, 0.1);
+            transition: 0.3s;
+            border-radius: 50px;
+
+            // @media #{$lg,$md,$xs} {
+            //     font-size: 13px;
+            //     height: 30px;
+            //     width: 30px;
+            //     line-height: 30px;
+            // }
+
+            & svg {
+                & path {
+                    transition: .3s;
+                }
+            }
+
+            &:hover {
+                background-color: var(--rr-theme-1);
+
+                & svg {
+                    & path {
+                        stroke: var(--rr-common-white);
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    &-list {
+
+        & ul {
+            & li {
+                list-style-type: none;
+                overflow: hidden;
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                & a {
+                    color: #54595F;
+                    position: relative;
+                    padding-left: 16px;
+                    margin-left: -16px;
+                    transition: .3s;
+                    font-family: var(--rr-ff-p);
+                    font-weight: 400;
+
+                    @media #{$lg,$md,$xs} {
+                        font-size: 14px;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        height: 2px;
+                        width: 10px;
+
+                    }
+
+                    &:hover {
+                        margin-left: 0;
+                        color: var(--rr-theme-1);
+
+                        & svg {
+                            & path {
+                                color: #1B7261;
+                                stroke: #1B7261;
+                            }
+                        }
+                    }
+
+                    & svg {
+                        margin-right: 10px;
+                        & path {
+                            transition: .3s;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+.rr-copyright-2 {
+    &-space {
+        padding: 20px 0;
+    }
+
+    &-broder {
+        border-top: 1px solid rgba(5, 17, 69, 0.1);
+    }
+
+    &-left {
+
+
+        & p {
+            color: #54595F;
+            margin-bottom: 0;
+            font-family: var(--rr-ff-p);
+
+            & a {
+                color: var(--rr-theme-1);
+                font-weight: 600;
+            }
+        }
+    }
+
+    &-right {
+        & p {
+            color: #54595F;
+            margin-bottom: 0;
+            font-family: var(--rr-ff-p);
+
+            & a {
+                color: var(--rr-theme-1);
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.footer-cols {
+    &-2 {
+        margin-left: 100px;
+
+        @media #{$lg} {
+            margin-left: 50px;
+        }
+        @media #{$md, $sm, $xs} {
+            margin-left: 0;
+        }
+    }
+
+    // &-3 {
+    //     margin-left: 90px;
+
+    //     @media #{$lg, $md, $sm, $xs} {
+    //         margin-left: 0;
+    //     }
+    // }
+
+    &-4 {
+        margin-left: 30px;
+
+        @media #{$md, $sm, $xs} {
+            margin-left: 0;
+        }
+    }
+}
+
+.rr-copyright {
+    &-social {
+        @media #{$sm, $xs} {
+            text-align: center !important;
+        }
+    }
+
+    &-social {
+        & ul {
+            & li {
+                display: inline-block;
+                margin-right: 10px;
+
+                & a {
+                    height: 36px;
+                    width: 36px;
+                    text-align: center;
+                    line-height: 32px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    display: inline-block;
+                    border-radius: 50px;
+
+                    &:hover {
+                        background-color: var(--rr-theme-1);
+                    }
+                }
+            }
+        }
+    }
+
+    &-2-left {
+        & p {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FFFFFF;
+
+            @media #{$sm, $xs} {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &-2-left-main {
+        & p {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #54595F;
+            margin-bottom: 0;
+            @media #{$sm, $xs} {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            & a {
+                color: var(--rr-theme-1);
+                font-weight: 700;
+            }
+        }
+    }
+}
+.rr-footer-3-title {
+	font-family: var(--rr-ff-h);
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 34px;
+	margin-top: 5px;
+	margin-bottom: 23px;
+	color: #051145;
+}
