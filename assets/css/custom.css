@@ -215,7 +215,7 @@ main{
     padding: 80px 0;
 }
 .rr-event-item {
-   min-height: 400px;
+   min-height: 450px;
    max-height: 500px;
    background: #fff;
    border-radius: 8px;
@@ -565,6 +565,10 @@ main{
         bottom: 75px;
         left: 35%;
     }
+    .rr-about-info {
+        padding: 2.5%;
+        margin: auto;
+    }
     .rr-testimonial-single-quate-icon {
         position: absolute;
         left: 0%;
@@ -574,5 +578,20 @@ main{
         position: absolute;
         right: 0%;
         bottom: 0%;
+    }
+}
+
+@media only screen and (max-width: 554px) {
+    .rr-hero-space {
+        max-height: 600px !important;
+        padding-top: 25%;
+    }
+    .rr-hero-2-area .swiper-pagination {
+        bottom: 75px;
+        left: 35%;
+    }
+    .rr-about-info {
+        padding: 2.5%;
+        margin: auto;
     }
 }

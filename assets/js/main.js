@@ -1059,25 +1059,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const section = document.querySelector('.section-videoplay');
     const video = document.getElementById('video');
     const isTouchDevice = ('ontouchstart' in window || navigator.maxTouchPoints);
-    let isAudioEnabled = false;
     let isSectionActive = false;
 
-    function setVideoAudio(isActive) {
-        video.muted = !isActive;
-        isAudioEnabled = isActive;
-    }
     function checkSectionInView() {
         const rect = section.getBoundingClientRect();
         isSectionActive = (rect.top < window.innerHeight && rect.bottom > 0);
+        console.log(`Section in view: ${isSectionActive}`);
     }
+
     function handleScroll() {
         checkSectionInView();
-        if (isTouchDevice || isSectionActive) {
-            setVideoAudio(true);
+        if (isSectionActive) {
+            video.play();
+            video.muted = false;
         } else {
-            setVideoAudio(false);
+            video.pause();
+            video.muted = true;
         }
     }
+
     function handleTouch() {
         if (isTouchDevice) {
             let lastTouchTime = 0;
@@ -1085,25 +1085,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 const currentTime = Date.now();
                 if (currentTime - lastTouchTime > 300) {
                     checkSectionInView();
-                    setVideoAudio(isSectionActive);
+                    if (isSectionActive) {
+                        video.play();
+                        video.muted = false;
+                    } else {
+                        video.pause();
+                        video.muted = true;
+                    }
                     lastTouchTime = currentTime;
                 }
             });
         }
     }
+
     function initialize() {
         if (isTouchDevice) {
             window.addEventListener('scroll', handleScroll);
             handleTouch();
         } else {
-            section.addEventListener('mouseover', () => setVideoAudio(true));
-            section.addEventListener('mouseout', () => setVideoAudio(false));
             window.addEventListener('scroll', handleScroll);
         }
-        handleScroll();
+        handleScroll(); // Initial check
     }
 
     initialize();
 });
-
-
