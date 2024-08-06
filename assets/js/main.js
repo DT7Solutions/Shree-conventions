@@ -1110,3 +1110,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initialize();
 });
+
+// flip assets image
+$('.flip').hover(function(){
+	$(this).find('.card').toggleClass('flipped');
+});
+

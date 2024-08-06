@@ -3,12 +3,12 @@
 
 :root {
     --rr-ff-body: 'Poppins' !important;
-    --rr-ff-h: 'Libre Bodoni', sans-serif;
+    /* --rr-ff-h: 'Libre Bodoni', sans-serif;
     --rr-ff-s: 'sail', system-ui;
-    --rr-ff-p: 'Open Sans', sans-serif;
-    /* --rr-ff-h: 'Poppins';
+    --rr-ff-p: 'Open Sans', sans-serif; */
+    --rr-ff-h: 'Poppins';
     --rr-ff-s: 'Poppins'; 
-    --rr-ff-p: 'Poppins'; */
+    --rr-ff-p: 'Poppins';
     --rr-theme-1: #f7a41a;
     --rr-heading-1: #ee1c23;
     --rr-text-body: #3b2b1d;
@@ -215,7 +215,7 @@ main{
     padding: 80px 0;
 }
 .rr-event-item {
-   min-height: 450px;
+   min-height: 475px;
    max-height: 500px;
    background: #fff;
    border-radius: 8px;
@@ -375,19 +375,6 @@ main{
     transform: scale(1.1);
 }
 
-/* Our Spaces Works Section */
-.rr-work-thumb,
-.rr-work-thumb::before {
-    border-radius: 8px;
-}
-.rr-work-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1);
-    transition: 0.5s;
-}
-
 /* CTA Section */
 .rr-cta-bg-img::before {
     opacity: 0.5;
@@ -420,7 +407,103 @@ main{
 }
 
 
+/* Our Asserts Section */
+.rr-assets-thumb {
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+.rr-assets-thumb::before {
+    position: absolute;
+    width: auto;
+    height: auto;
+    background: rgba(0,0,0, 0.5);
+    content: "";
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 2;
+    border-radius: 8px;
+}
+.rr-assets-thumb img {
+    min-height: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.rr-assets-item {
+    margin-bottom: 30px;
+}
+.rr-assets-item:hover .rr-assets-thumb::before {
+    opacity: 1;
+    visibility: visible;
+}
+.rr-assets-item:hover .rr-assets-thumb img {
+    transform: scale(1.2);
+}
+.rr-assets-item:hover .rr-assets-content {
+    opacity: 1;
+    visibility: visible;
+}
+.rr-assets-title {
+    font-family: var(--rr-ff-h);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: var(--rr-heading-1);
+    transition: 0.3s;
+}
+@media (max-width: 767px) {
+    .rr-assets-title {
+      font-size: 19px;
+      line-height: 25px;
+    }
+}
+.rr-assets-title:hover {
+    color: var(--rr-theme-1);
+}
+.rr-assets-content {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    opacity: 0;
+    padding: 7.5% 7.5%;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.rr-assets-content p{
+    color: #fff;
+}
+
+
+
 /* breadcrumb Css Override Style */
+.breadcrumb__area {
+    background-image: url(/assets/img/header/cover-image-1536x569.png) !important;
+    background-size: cover;
+    object-fit: fill;
+    background-position: top center;
+}
+.breadcrumb__area:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: var(--rr-text-body);
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
 .rr-footer-2-title,
 .breadcrumb__title,
 .rr-contact__title  {
@@ -459,7 +542,6 @@ main{
     color: var(--rr-theme-1);
 }
 
- 
 
 /* Services Page */
 .rr-service-item {
@@ -489,7 +571,7 @@ main{
     border-color: var(--rr-theme-1);
 }
 .nav-tabs .nav-link {
-    padding: 1% 7.5%;
+    padding: 0.5% 10%;
     color: #000;
     border: 1px solid #ddd;
 }
@@ -555,6 +637,26 @@ main{
     background: rgba(247,164,26, 0.5);
 }
 
+/* Background Images */
+.rr-events-explore-area{
+    background-image: url(/assets/img/bg-2.png) !important;
+    background-size: cover;
+    object-fit: fill;
+    background-position: top center;
+}
+.rr-testimonial-single-area {
+    background-image: url(/assets/img/bg-1.png) !important;
+    background-size: cover;
+    object-fit: fill;
+    background-position: top center;
+}
+footer{
+    background-image: url(/assets/img/bg-4.png) !important;
+    background-size: cover;
+    object-fit: fill;
+    background-position: center;
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .rr-hero-space {
@@ -593,5 +695,8 @@ main{
     .rr-about-info {
         padding: 2.5%;
         margin: auto;
+    }
+    .breadcrumb__height {
+        max-height: 150px;
     }
 }
