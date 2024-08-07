@@ -1116,3 +1116,12 @@ $('.flip').hover(function(){
 	$(this).find('.card').toggleClass('flipped');
 });
 
+// Preloader
+function preloader() {
+    setTimeout(showPage, 1500);
+}
+function showPage() {
+    document.getElementById("preloader").style.display = "none";
+}
+window.onload = preloader;
+
