@@ -496,7 +496,7 @@ main{
 
 /* breadcrumb Css Override Style */
 .breadcrumb__area {
-    background-image: url(/assets/img/header/cover-image-1536x569.png) !important;
+    background-image: url(../img/header/cover-image-1536x569.png) !important;
     background-size: cover;
     object-fit: fill;
     background-position: top center;
@@ -668,31 +668,31 @@ main{
 
 /* Background Images */
 .rr-about-area{
-    background-image: url(/assets/img/bg-3.png) !important;
+    background-image: url(../img/bg-3.png) !important;
     background-size: cover;
     object-fit: fill;
     background-position: top center;
 }
 .rr-events-explore-area{
-    background-image: url(/assets/img/bg-2.png) !important;
+    background-image: url(../img/bg-2.png) !important;
     background-size: cover;
     object-fit: fill;
     background-position: top center;
 }
 .rr-testimonial-single-area {
-    background-image: url(/assets/img/bg-1.png) !important;
+    background-image: url(../img/bg-1.png) !important;
     background-size: cover;
     object-fit: fill;
     background-position: top center;
 }
 .rr-contact-bg {
-    background-image: url(/assets/img/bg-4.png) !important;
+    background-image: url(../img/bg-4.png) !important;
     background-size: cover;
     object-fit: fill;
     background-position: center;
 }
 footer{
-    background-image: url(/assets/img/bg-5.png) !important;
+    background-image: url(../img/bg-5.png) !important;
     background-size: cover;
     object-fit: fill;
     background-position: center;
