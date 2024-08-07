@@ -242,23 +242,39 @@ main{
    padding: 5%;
 }
 .rr-event-title {
-   font-size: 1.5rem;
-   margin-bottom: 10px;
-   font-family: var(--rr-ff-h);
-   color: var(--rr-heading-1);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    color: var(--rr-theme-1);
+    font-family: var(--rr-ff-h);
+    transition: 0.3s;
 }
+.rr-event-title:hover {
+    color: var(--rr-heading-1);
+ }
 .rr-event-content p {
-   font-size: 1rem;
-   color: #666;
-}
-.rr-event-btn a {
-    font-family: var(--rr-ff-p);
-    font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
     color: #54595F;
+}
+.rr-event-btn a {
+    font-size: 16px;
+    padding: 10px 20px;
+    font-family: var(--rr-ff-p);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    background-color: transparent;
+    color: #54595F;
+    letter-spacing: 0.03em;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+    position: relative;
+    margin-top: 10px;
 }
 .rr-event-btn:hover a {
     color: var(--rr-theme-1);
@@ -270,7 +286,7 @@ main{
 .modal-content {
     border: none;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 .modal-body {
     padding: 5%;
@@ -308,14 +324,15 @@ main{
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: var(--rr-theme-1);
+    background: var(--rr-heading-1);
     border: none;
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
     text-align: center;
-    color: #fff;
-    z-index: 999;
+    color: var(--rr-text-body);
+    z-index: 1;
+    opacity: 9;
 }
 .btn-close::before {
     content: '×';
@@ -649,7 +666,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(-50%, -50%) scale(1.05);
+    transform: translate(-50%, -50%) scale(1);
 }
 
 /* Contact Page */
@@ -665,8 +682,20 @@ main{
 .rr-contact-item-icon span {
     background: rgba(247,164,26, 0.5);
 }
+.rr-brand-item img {
+    filter: grayscale(100%);
+    opacity: 0.9;
+    transition: all 0.3s linear;
+}
+.rr-brand-item:hover img {
+    filter: grayscale(0%) drop-shadow(2px 2px 5px rgba(5, 10, 10, 0.5));
+    opacity: 1;
+}
 
 /* Background Images */
+.rr-brand-area{
+    background: #f2ebe6;
+}
 .rr-about-area{
     background-image: url(../img/bg-3.png) !important;
     background-size: cover;
