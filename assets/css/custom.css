@@ -727,6 +727,14 @@ footer{
     background-position: center;
 }
 
+@media (min-width:991px){
+    .footer-cols-2 {
+        margin-left: 20%;
+    }
+    .footer-cols-3{
+        margin-left: -10%;
+    }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .rr-hero-space {
