@@ -702,25 +702,37 @@ main{
     background: #f2ebe6;
 }
 .rr-about-area{
-    background-image: url(../img/bg-3.png) !important;
-    background-size: cover;
-    object-fit: fill;
-    background-position: top center;
-}
-.rr-events-explore-area{
-    background-image: url(../img/bg-2.png) !important;
-    background-size: cover;
-    object-fit: fill;
-    background-position: top center;
-}
-.rr-testimonial-single-area {
     background-image: url(../img/bg-1.png) !important;
     background-size: cover;
     object-fit: fill;
     background-position: top center;
 }
-.rr-contact-bg {
+.rr-events-explore-area {
+    background-image: url(../img/bg-2.png) !important;
+    background-size: cover;
+    object-fit: fill;
+    background-position: center;
+}
+.rr-service-area {
+    background-image: url(../img/bg-3.png) !important;
+    background-size: cover;
+    object-fit: fill;
+    background-position: center;
+}
+.rr-gallery-area {
     background-image: url(../img/bg-4.png) !important;
+    background-size: cover;
+    object-fit: fill;
+    background-position: center;
+}
+.rr-testimonial-single-area {
+    background-image: url(../img/bg-5.png) !important;
+    background-size: cover;
+    object-fit: fill;
+    background-position: center;
+}
+.rr-contact-bg {
+    background-image: url(../img/bg-c.png) !important;
     background-size: cover;
     object-fit: fill;
     background-position: center;
@@ -731,9 +743,16 @@ main{
     object-fit: fill;
     background-position: center;
 }
+.rr-assets-area,
+.rr-brand-area{
+    background-image: url(../img/bg-6.png) !important;
+    background-size: cover;
+    object-fit: fill;
+    background-position: center;
+}
 footer{
     border-top: 1px solid rgba(5, 17, 69, 0.1);
-    background-image: url(../img/bg-5.png) !important;
+    background-image: url(../img/bg-f.png) !important;
     background-size: cover;
     object-fit: fill;
     background-position: center;
