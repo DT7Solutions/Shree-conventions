@@ -31,7 +31,7 @@
 	////////////////////////////////////////////////////
 	// 01. PreLoader Js
 	windowOn.on('load', function () {
-		$("#loading").fadeOut(500);
+		$("#loading").fadeOut(1000);
 	});
 
 
@@ -1115,13 +1115,4 @@ document.addEventListener('DOMContentLoaded', () => {
 $('.flip').hover(function(){
 	$(this).find('.card').toggleClass('flipped');
 });
-
-// Preloader
-function preloader() {
-    setTimeout(showPage, 1500);
-}
-function showPage() {
-    document.getElementById("preloader").style.display = "none";
-}
-window.onload = preloader;
 
