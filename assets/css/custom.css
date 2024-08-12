@@ -419,6 +419,7 @@ main{
 /* CTA Section */
 .rr-cta-bg-img::before {
     opacity: 0.5;
+    background: transparent;
 }
 .rr-cta-title-2 {
     position: relative;
@@ -725,12 +726,13 @@ main{
     background-position: center;
 }
 .rr-cta-area {
-    background-image: url(../img/cta/cta-bg-new.png) !important;
+    background-image: url(../img/bg-2.png) !important;
     background-size: cover;
     object-fit: fill;
     background-position: center;
 }
 footer{
+    border-top: 1px solid rgba(5, 17, 69, 0.1);
     background-image: url(../img/bg-5.png) !important;
     background-size: cover;
     object-fit: fill;
