@@ -31,7 +31,7 @@
 	////////////////////////////////////////////////////
 	// 01. PreLoader Js
 	windowOn.on('load', function () {
-		$("#loading").fadeOut(1000);
+		$("#loading").fadeOut(500);
 	});
 
 
@@ -505,21 +505,21 @@ var swiperProject = new Swiper(".rr-services-2-active", {
 		// Optional parameters
 		speed: 1000,
 		loop: true,
-		slidesPerView: 4,
+		slidesPerView: 2,
 		autoplay: true,
 		spaceBetween: 30,
 		breakpoints: {
 			'1600': {
-				slidesPerView: 4,
+				slidesPerView: 2,
 			},
 			'1400': {
-				slidesPerView: 4,
+				slidesPerView: 2,
 			},
 			'1200': {
-				slidesPerView: 4,
+				slidesPerView: 2,
 			},
 			'992': {
-				slidesPerView: 4,
+				slidesPerView: 2,
 			},
 			'768': {
 				slidesPerView: 3,
