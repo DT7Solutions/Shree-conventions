@@ -290,7 +290,7 @@ main{
     margin: 1% auto;
 }
 .rr-about-info .rr-about-btn{
-    margin-top: 5%;
+    margin-top: -2.5%;
 }
 @media (max-width: 768px) {
     .rr-about-info p {
