@@ -285,7 +285,7 @@ main{
     border-radius: 12px;
 }
 .rr-about-info p {
-    text-align: center;
+    text-align: justify;
     max-width: 100%;
     margin: 1% auto;
 }
