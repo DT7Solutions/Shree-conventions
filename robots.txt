@@ -4,4 +4,4 @@ Disallow: /cgi-bin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://shreeconventions.com/sitemap.xml
+Sitemap: https://shreeconvention.com/sitemap.xml
