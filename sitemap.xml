@@ -12,11 +12,6 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://shreeconvention.com/index.html</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://shreeconvention.com/about.html</loc>
   <lastmod>2024-09-04T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
@@ -43,16 +38,37 @@
 </url>
 
 <!-- Videos -->
-<url>
-  <loc>https://shreeconvention.com/assets/video/shree-convention-mini-hall-banquet-space.mp4</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/video/shree-convention-main-hall-event-space.mp4</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <!-- Video 1: Shree Convention Mini Hall Banquet Space -->
+  <url>
+    <loc>https://shreeconvention.com/assets/video/shree-convention-mini-hall-banquet-space.mp4</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.60</priority>
+    <video:video>
+      <video:content_loc>https://shreeconvention.com/assets/video/shree-convention-mini-hall-banquet-space.mp4</video:content_loc>
+      <video:thumbnail_loc>https://shreeconvention.com/assets/video/shree-convention-mini-hall-banquet-space-thumbnail.PNG</video:thumbnail_loc>
+      <video:title>Shree Convention Mini Hall - Banquet Space for Gatherings and Celebrations</video:title>
+      <video:description>A video showcasing Shree Convention's Mini Hall, a venue perfect for small gatherings and celebrations.</video:description>
+      <video:duration>195</video:duration> <!-- Replace with actual duration in seconds -->
+      <video:publication_date>2024-09-04T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
+  <!-- Video 2: Shree Convention Main Hall Event Space -->
+  <url>
+    <loc>https://shreeconvention.com/assets/video/shree-convention-main-hall-event-space.mp4</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.60</priority>
+    <video:video>
+      <video:content_loc>https://shreeconvention.com/assets/video/shree-convention-main-hall-event-space.mp4</video:content_loc>
+      <video:thumbnail_loc>https://shreeconvention.com/assets/video/shree-convention-main-hall-event-space-thumbnail.PNG</video:thumbnail_loc>
+      <video:title>Shree Convention Main Hall - Premium Event Venue</video:title>
+      <video:description>A video showcasing Shree Convention's Main Hall, ideal for weddings, conferences, and large events.</video:description>
+      <video:duration>153</video:duration> <!-- Replace with actual duration in seconds -->
+      <video:publication_date>2024-09-04T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+</urlset>
 
 <!-- Images -->
 <url>
