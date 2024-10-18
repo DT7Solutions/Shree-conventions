@@ -1,135 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-<url>
-  <loc>https://shreeconvention.com/</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/about.html</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/venues.html</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/services.html</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/gallery.html</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/contact.html</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <!-- Pages -->
+  <url>
+    <loc>https://shreeconvention.com/</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/about.html</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/venues.html</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/services.html</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/gallery.html</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/contact.html</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 
-<!-- Videos -->
-<url>
-  <loc>https://shreeconvention.com/assets/video/shree-convention-mini-hall-banquet-space.mp4</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-  <video:video>
-    <video:content_loc>https://shreeconvention.com/assets/video/shree-convention-mini-hall-banquet-space.mp4</video:content_loc>
-    <video:thumbnail_loc>https://shreeconvention.com/assets/video/shree-convention-mini-hall-banquet-space-thumbnail.PNG</video:thumbnail_loc>
-    <video:title>Shree Convention Mini Hall - Banquet Space for Gatherings and Celebrations</video:title>
-    <video:description>A video showcasing Shree Convention's Mini Hall, a venue perfect for small gatherings and celebrations.</video:description>
-    <video:duration>195</video:duration> <!-- Replace with actual duration in seconds -->
-    <video:publication_date>2024-09-04T00:00:00+00:00</video:publication_date>
-  </video:video>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/video/shree-convention-main-hall-event-space.mp4</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.60</priority>
-  <video:video>
-    <video:content_loc>https://shreeconvention.com/assets/video/shree-convention-main-hall-event-space.mp4</video:content_loc>
-    <video:thumbnail_loc>https://shreeconvention.com/assets/video/shree-convention-main-hall-event-space-thumbnail.PNG</video:thumbnail_loc>
-    <video:title>Shree Convention Main Hall - Premium Event Venue</video:title>
-    <video:description>A video showcasing Shree Convention's Main Hall, ideal for weddings, conferences, and large events.</video:description>
-    <video:duration>153</video:duration> <!-- Replace with actual duration in seconds -->
-    <video:publication_date>2024-09-04T00:00:00+00:00</video:publication_date>
-  </video:video>
-</url>
+  <!-- Videos -->
+  <url>
+    <loc>https://shreeconvention.com/assets/video/shree-convention-mini-hall-banquet-space.mp4</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.60</priority>
+    <video:video>
+      <video:content_loc>https://shreeconvention.com/assets/video/shree-convention-mini-hall-banquet-space.mp4</video:content_loc>
+      <video:thumbnail_loc>https://shreeconvention.com/assets/video/shree-convention-mini-hall-banquet-space-thumbnail.PNG</video:thumbnail_loc>
+      <video:title>Shree Convention Mini Hall - Banquet Space for Gatherings and Celebrations</video:title>
+      <video:description>A video showcasing Shree Convention's Mini Hall, a venue perfect for small gatherings and celebrations.</video:description>
+      <video:duration>54</video:duration>
+      <video:publication_date>2024-09-04T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/assets/video/shree-convention-main-hall-event-space.mp4</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.60</priority>
+    <video:video>
+      <video:content_loc>https://shreeconvention.com/assets/video/shree-convention-main-hall-event-space.mp4</video:content_loc>
+      <video:thumbnail_loc>https://shreeconvention.com/assets/video/shree-convention-main-hall-event-space-thumbnail.PNG</video:thumbnail_loc>
+      <video:title>Shree Convention Main Hall - Premium Event Venue</video:title>
+      <video:description>A video showcasing Shree Convention's Main Hall, ideal for weddings, conferences, and large events.</video:description>
+      <video:duration>35</video:duration>
+      <video:publication_date>2024-09-04T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
 
-<!-- Images -->
-<url>
-  <loc>https://shreeconvention.com/assets/img/logo/shree-convention-logo-420x140.png</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/img/about/about-us.png</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/img/about/shreeconventions-about.jpg</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/img/work/siva-city-center.webp</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/img/work/siva-constructions.webp</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/img/work/siva-cinemas.webp</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/img/brand/shreeconventions-award.png</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/img/work/shreeconventions-shree-vybavam.png</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/img/work/shreeconventions-shree-utsav.png</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/img/work/shreeconventions-shree-elite.png</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/img/work/shreeconventions-central-greens.png</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/img/work/shreeconventions-central-courtyard.png</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://shreeconvention.com/assets/img/work/shreeconventions-elite-stays.png</loc>
-  <lastmod>2024-09-04T00:00:00+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
+  <!-- Images -->
+  <url>
+    <loc>https://shreeconvention.com/assets/img/logo/shree-convention-logo-420x140.png</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+    <image:image>
+      <image:loc>https://shreeconvention.com/assets/img/logo/shree-convention-logo-420x140.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/assets/img/about/about-us.png</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+    <image:image>
+      <image:loc>https://shreeconvention.com/assets/img/about/about-us.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/assets/img/about/shreeconventions-about.jpg</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+    <image:image>
+      <image:loc>https://shreeconvention.com/assets/img/about/shreeconventions-about.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/assets/img/work/siva-city-center.webp</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+    <image:image>
+      <image:loc>https://shreeconvention.com/assets/img/work/siva-city-center.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/assets/img/work/siva-constructions.webp</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+    <image:image>
+      <image:loc>https://shreeconvention.com/assets/img/work/siva-constructions.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/assets/img/work/siva-cinemas.webp</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+    <image:image>
+      <image:loc>https://shreeconvention.com/assets/img/work/siva-cinemas.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/assets/img/brand/shreeconventions-award.png</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+    <image:image>
+      <image:loc>https://shreeconvention.com/assets/img/brand/shreeconventions-award.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/assets/img/work/shreeconventions-shree-vybavam.png</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+    <image:image>
+      <image:loc>https://shreeconvention.com/assets/img/work/shreeconventions-shree-vybavam.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/assets/img/work/shreeconventions-shree-utsav.png</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+    <image:image>
+      <image:loc>https://shreeconvention.com/assets/img/work/shreeconventions-shree-utsav.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/assets/img/work/shreeconventions-shree-elite.png</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+    <image:image>
+      <image:loc>https://shreeconvention.com/assets/img/work/shreeconventions-shree-elite.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/assets/img/work/shreeconventions-central-greens.png</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+    <image:image>
+      <image:loc>https://shreeconvention.com/assets/img/work/shreeconventions-central-greens.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/assets/img/work/shreeconventions-central-courtyard.png</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+    <image:image>
+      <image:loc>https://shreeconvention.com/assets/img/work/shreeconventions-central-courtyard.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://shreeconvention.com/assets/img/work/shreeconventions-elite-stays.png</loc>
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.50</priority>
+    <image:image>
+      <image:loc>https://shreeconvention.com/assets/img/work/shreeconventions-elite-stays.png</image:loc>
+    </image:image>
+  </url>
 
 </urlset>
