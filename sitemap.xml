@@ -38,6 +38,21 @@
     <priority>0.80</priority>
   </url>
 
+  <!-- Video -->
+  <url>
+    <loc>https://shreeconvention.com/</loc> <!-- HTML page containing the video -->
+    <lastmod>2024-09-04T00:00:00+00:00</lastmod>
+    <priority>0.80</priority>
+    <video:video>
+      <video:content_loc>https://shreeconvention.com/assets/video/shree-convention-main-hall-event-space.mp4</video:content_loc> <!-- Direct link to the video file -->
+      <video:thumbnail_loc>https://shreeconvention.com/assets/video/shree-convention-main-hall-event-space-thumbnail.PNG</video:thumbnail_loc>
+      <video:title>Shree Convention Main Hall - Premium Event Venue</video:title>
+      <video:description>A video showcasing Shree Convention's Main Hall, ideal for weddings, conferences, and large events.</video:description>
+      <video:duration>153</video:duration>
+      <video:publication_date>2024-09-04T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+
   <!-- Video 1 -->
   <url>
     <loc>https://shreeconvention.com/venues.html</loc> <!-- HTML page containing the video -->
